@@ -1,0 +1,37 @@
+:root {
+    /* fonts */
+    --ff-primary: 'DM Sans', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    /* colours */
+    --clr-main-accent-yellow: hsl(28, 100%, 79%);
+    --clr-main-accent-pink: hsl(329, 36%, 59%);
+    --clr-main-accent-blue: hsl(229, 100%, 67%);
+  
+    --clr-pure-black: hsl(0, 0%, 0%);
+    --clr-light-grey: hsl(0, 0%, 87%);
+    --clr-pure-white: hsl(0, 0%, 100%);
+  
+    /* font sizes */
+    // --fs-400: 0.8125rem;
+    // --fs-500: 0.9724rem;
+    // --fs-900: 2rem;
+    
+    /* buttons */
+    
+}
+
+/* breakpoints */
+$mobile-max-width: 768px;
+$tablet-max-width: 1024px;
+
+  
+//   @mixin flexCenter($direction) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+//   }
+  
