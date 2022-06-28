@@ -1,9 +1,22 @@
 import logo from '../../starter-code/assets/shared/desktop/logo.svg';
 import hamburger from '../../starter-code/assets/shared/mobile/menu.svg';
+import cross from '../../starter-code/assets/shared/mobile/close.svg';
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
-function mainNavigation() {
+function MainNavigation() {
+
+    const [ mobileMenuOpen, setMobileMenuOpen  ] = useState(false);
+
+    function hamburgerHandler(event){
+
+        setMobileMenuOpen((prev) => {
+            return !prev;
+        })
+        
+    }
+
     return <nav className='main-navigation'>
         <div className='photosnap-logo'>
             <Image 
@@ -12,19 +25,22 @@ function mainNavigation() {
                 alt="photosnap-logo" 
             />
         </div>
-            <div className='nav-page-links-container'>
+            <div className={`nav-page-links-container ${ mobileMenuOpen }`}>
                 <Link href='/stories'><h4>Stories</h4></Link>
                 <Link href='/features'><h4>Features</h4></Link>
                 <Link href='/pricing'><h4>Pricing</h4></Link>
             </div>
             <div className='button-burger-container'>
                 <Image 
-                    src={ hamburger } 
-                    className="hamburger" 
+                    src={ mobileMenuOpen === true ? cross : hamburger } 
+                    open={ mobileMenuOpen }
+                    className='hamburger' 
                     alt="hamburger" 
+                    layout='fixed'
+                    onClick={ hamburgerHandler }
                 />
                 <Link href='/pricing'>
-                    <button className='get-an-invite-btn'>
+                    <button className={`get-an-invite ${ mobileMenuOpen }`}>
                         <h4>get an invite</h4>
                     </button>
                 </Link>
@@ -32,4 +48,4 @@ function mainNavigation() {
     </nav>
 }
 
-export default mainNavigation;
+export default MainNavigation;

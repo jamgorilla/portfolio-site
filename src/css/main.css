@@ -164,9 +164,28 @@ button:hover {
     height: fit-content;
     display: block;
   }
-  .main-navigation .nav-page-links-container {
-    visibility: hidden;
+  .main-navigation .nav-page-links-container.false {
+    display: none;
+  }
+  .main-navigation .nav-page-links-container.true {
     position: absolute;
+    left: 0;
+    right: 0;
+    background: var(--clr-pure-white);
+    top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .main-navigation .button-burger-container {
     display: -webkit-box;
@@ -175,10 +194,28 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
-  .main-navigation .button-burger-container .get-an-invite-btn {
-    visibility: hidden;
-    position: relative;
+  .main-navigation .button-burger-container .get-an-invite.false {
+    display: none;
+  }
+  .main-navigation .button-burger-container .get-an-invite.true {
+    position: absolute;
+    top: 11rem;
+    display: block;
+    width: 100%;
+    left: 0;
+    border-top: 1rem;
+    border-left: 5rem;
+    border-bottom: 2rem;
+    border-right: 5rem;
+    border-style: solid;
+    border-color: var(--clr-pure-white);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main-navigation .button-burger-container .hamburger {
     visibility: visible;
