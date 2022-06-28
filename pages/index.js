@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
 
         <h2>
-          h2 examples
+          h2 examples deploy test
         </h2>
         <p>
           Paragraph example
