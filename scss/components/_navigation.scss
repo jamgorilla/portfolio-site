@@ -1,0 +1,54 @@
+.main-navigation {
+    height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--clr-pure-white);
+    align-items: center;
+    & .photosnap-logo{
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+    }
+    & .nav-page-links-container{
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    & .button-burger-container {
+        margin: 0 auto;
+        //max-width: 12rem;
+        & .hamburger {
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+    @media screen and (max-width: $mobile-max-width) {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        & .photosnap-logo{
+            width: 100%;
+            height:fit-content;
+            display: block;
+        }
+        & .nav-page-links-container{
+            visibility: hidden;
+            position: absolute;
+        }
+        & .button-burger-container {
+            display: flex;
+            align-items: center;
+            & .get-an-invite-btn {
+                visibility: hidden;
+                position: relative;
+            }
+            & .hamburger {
+                visibility: visible;
+               // width: 100%;
+            }
+        }
+    }
+}

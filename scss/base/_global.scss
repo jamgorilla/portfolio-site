@@ -1,34 +1,46 @@
 body {
     background-color: red;
 }
-main {
-    font-family: var(--ff-primary);
-    
-    & h1 {
-        font-size: 40px;
-        line-height: 48px;
-        letter-spacing: 4.17px;
-        text-transform: uppercase;
-        @media screen and (max-width: $mobile-max-width) {
-            font-size: 32px;
-            line-height: 40px;
-            letter-spacing: 3.33px;
-        }
+h1,h2,h3,h4 {
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+    @media screen and (max-width: $mobile-max-width) {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 3.33px;
     }
-    & h2 {
-        font-size: 24px;
-        line-height: 25px;
-    }
-    & h3 {
-        font-size: 18px;
-        line-height: 25px;
-    }
-    & h4 {
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 2px;
-    }
-    & p {
-        font-weight: var(--fw-regular);
+}
+h2 {
+    font-size: 24px;
+    line-height: 25px;
+}
+h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+h4 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+p {
+    font-weight: var(--fw-regular);
+}
+button {
+    border: none;
+    color: var(--clr-pure-white);
+    background-color: var(--clr-pure-black);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+    &:hover {
+        color: var(--clr-pure-black);
+        background-color: var(--clr-light-grey);
+        
     }
 }
