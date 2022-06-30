@@ -186,6 +186,7 @@ button:hover {
     gap: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    z-index: 999;
   }
   .main-navigation .button-burger-container {
     display: -webkit-box;
@@ -216,9 +217,50 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 999;
   }
   .main-navigation .button-burger-container .hamburger {
     visibility: visible;
   }
+}
+
+.text-box {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.text-box p {
+  margin-top: 1rem;
+}
+
+.text-box h4 {
+  margin-top: 1.5rem;
+}
+
+.black-text-container {
+  background: var(--clr-pure-black);
+  color: var(--clr-pure-white);
+}
+
+.invite-flex-container, .view-stories-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 1rem;
+}
+
+.invite-flex-container .arrow {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg) brightness(103%) contrast(103%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg) brightness(103%) contrast(103%);
+}
+
+.white-text-container {
+  background: var(--clr-pure-white);
+  color: var(--clr-pure-black);
 }
 /*# sourceMappingURL=main.css.map */

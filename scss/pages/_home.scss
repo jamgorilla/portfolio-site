@@ -1,0 +1,33 @@
+.text-box {
+    padding-left: $mobile-side-padding;
+    padding-right: $mobile-side-padding;
+    padding-top: $mobile-top-bottom-padding;
+    padding-bottom: $mobile-top-bottom-padding;
+    & p {
+        margin-top: 1rem;
+    }
+    & h4 {
+        margin-top: 1.5rem;
+    }
+}
+
+.black-text-container {
+    background: var(--clr-pure-black);
+    color: var(--clr-pure-white);
+}
+
+.invite-flex-container, .view-stories-flex-container {
+    display: flex;
+    align-items: baseline;
+    gap:1rem;
+} 
+.invite-flex-container {
+    & .arrow {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg) brightness(103%) contrast(103%);
+    }
+}
+
+.white-text-container {
+    background: var(--clr-pure-white);
+    color: var(--clr-pure-black);
+}

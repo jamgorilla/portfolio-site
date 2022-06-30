@@ -1,6 +1,11 @@
 import Head from 'next/head'
 import MainNavigation from '../components/mainNavigation/MainNavigation.js'
+import lake from '../starter-code/assets/home/desktop/create-and-share.jpg' 
+import laptop from '../starter-code/assets/home/desktop/beautiful-stories.jpg'
+import arrow from '../starter-code/assets/shared/desktop/arrow.svg' 
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 export default function Home() {
   return (
@@ -14,16 +19,47 @@ export default function Home() {
       <MainNavigation />
 
       <main>
-        <h1>
-          Create and share your stories
-        </h1>
+        <Image 
+            className='lake-photographer-picture'
+            src={ lake }  
+            layout='responsive' 
+            alt="man standing by lake"/>
 
-        <h2>
-          h2 examples deploy test
-        </h2>
+        <div className='text-box black-text-container'>
+          <h1>
+            Create and share your photo Stories
+          </h1>
+          <p>
+            Photosnap is a platform for photographers and visual storytellers. We make it 
+            easy to share photos, tell stories and connect with others.
+          </p>
+          <div className='invite-flex-container'>
+            <Link href="/pricing" className='invite-link'><h4>Get an invite</h4></Link>
+            <Image layout="fixed" width="50px" height="15px" className='arrow' src={ arrow }/>
+          </div>
+        </div>
+
+        <Image 
+            className='laptop on desk-picture'
+            src={ laptop }  
+            layout='responsive' 
+            alt="man standing by lake"/>
+
+
+      <div className='text-box white-text-container'>
+        <h1>
+        Beautiful stories every time
+        </h1>
         <p>
-          Paragraph example
+          We provide design templates to ensure your stories look terrific. Easily add 
+          photos, text, embed maps and media from other networks. Then share your story 
+          with everyone.
         </p>
+        <div className='view-stories-flex-container'>
+            <Link href="/stories" className='invite-link'><h4>Get an invite</h4></Link>
+            <Image layout="fixed" width="50px" height="15px" className='arrow' src={ arrow }/>
+          </div>
+      </div>
 
         <div>
           <a href="https://nextjs.org/docs">
