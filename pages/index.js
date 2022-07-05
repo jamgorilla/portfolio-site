@@ -3,12 +3,34 @@ import MainNavigation from '../components/mainNavigation/MainNavigation.js'
 import lake from '../starter-code/assets/home/desktop/create-and-share.jpg' 
 import laptop from '../starter-code/assets/home/desktop/beautiful-stories.jpg'
 import camera from '../starter-code/assets/home/desktop/designed-for-everyone.jpg'
+import mountain from '../starter-code/assets/stories/desktop/mountains.jpg'
+
 import arrow from '../starter-code/assets/shared/desktop/arrow.svg' 
 import Image from 'next/image'
 import Link from 'next/link'
+import StoriesList from '../components/stories/StoriesList.js'
 
 
 export default function Home() {
+
+  const storyArrayOfObject = {
+    story:[
+      {
+        title: "The Mountains",
+        author: "John Appleseed",
+        id: "1",
+        image: { mountain },
+        content: "ipsum lorum"
+      },{
+        title: "Sunset Cityscapes",
+        author: "John Appleseed",
+        id: "1",
+        image: "image-source",
+        content: "ipsum lorum"
+      }
+
+    ]}
+
   return (
     <div>
       <Head>
@@ -114,7 +136,7 @@ export default function Home() {
         </div>
       </div> {/* section container */}
 
-   
+      <StoriesList story={ storyArrayOfObject.story } />
       </main>
 
       <footer>

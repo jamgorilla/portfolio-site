@@ -47,10 +47,6 @@ time, mark, audio, video {
 }
 
 /* breakpoints */
-body {
-  background-color: red;
-}
-
 h1, h2, h3, h4 {
   text-transform: uppercase;
   font-weight: var(--fw-bold);
@@ -222,6 +218,17 @@ button:hover {
   .main-navigation .button-burger-container .hamburger {
     visibility: visible;
   }
+}
+
+.stories-list-ul-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+li {
+  border: black solid 2px;
 }
 
 .text-box {

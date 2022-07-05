@@ -2,7 +2,7 @@
 
  function StoriesList(props) {
     return (
-        <ul>
+        <ul className='stories-list-ul-container'>
             {props.story.map((story) => (
                 <StoreisItem 
                     key={story.id}
