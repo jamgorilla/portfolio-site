@@ -1,13 +1,27 @@
 .text-box {
+    display: flex;
+    flex-direction: column;
     padding-left: $mobile-side-padding;
     padding-right: $mobile-side-padding;
     padding-top: $mobile-top-bottom-padding;
     padding-bottom: $mobile-top-bottom-padding;
+    justify-content: center;
     & p {
         margin-top: 1rem;
     }
     & h4 {
         margin-top: 1.5rem;
+    }
+    @media screen and (min-width: $tablet-max-width) {
+        //desktop and larger
+        padding-left: 4rem;
+        padding-right: 4rem;
+        & p {
+            margin-top: 1.5rem;
+        }
+        & h4 {
+            margin-top: 2rem;
+        }
     }
 }
 
@@ -20,6 +34,7 @@
     display: flex;
     align-items: baseline;
     gap:1rem;
+    cursor: pointer;
 } 
 .invite-flex-container {
     & .arrow {
@@ -30,4 +45,55 @@
 .white-text-container {
     background: var(--clr-pure-white);
     color: var(--clr-pure-black);
+}
+
+.section-container .right-image-container span {
+    height: 100% !important;
+}
+.section-container .left-image-container span {
+    height: 100% !important;
+}
+
+@media screen and (min-width: $mobile-max-width) {
+    // tablet //
+    .section-container {
+        display: grid;
+        height: 30rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        & .section-picture {
+            object-fit: cover;
+        }
+        & .right-image-container {
+            @include section-grid-sides(3, 4);
+        }
+        & .left-image-container {
+            @include section-grid-sides(1, 2);
+        }
+        & .text-box-left {
+            @include section-grid-sides(1, 3);
+        }
+        & .text-box-right {
+            @include section-grid-sides(2, 4);
+        }
+
+        @media screen and (min-width: $tablet-max-width) {
+            /////// desktop ///////
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            height: 45rem;
+            & .right-image-container {
+                @include section-grid-sides(3, 6);
+            }
+            & .left-image-container {
+                @include section-grid-sides(1, 4);
+            }
+            & .text-box-left {
+                @include section-grid-sides(1, 3);
+            }
+            & .text-box-right {
+                @include section-grid-sides(4, 6);
+            }
+        }
+
+    }
 }
