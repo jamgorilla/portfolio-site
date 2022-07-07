@@ -47,6 +47,10 @@ time, mark, audio, video {
 }
 
 /* breakpoints */
+body {
+  background-color: red;
+}
+
 h1, h2, h3, h4 {
   text-transform: uppercase;
   font-weight: var(--fw-bold);
@@ -223,12 +227,36 @@ button:hover {
 .stories-list-ul-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 li {
-  border: black solid 2px;
+  list-style-type: none;
+  position: relative;
+}
+
+li span {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  width: 100%;
+  height: 100%;
+}
+
+li .details-container {
+  position: absolute;
+  width: 80%;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+}
+
+li .details-container hr {
+  background-color: blue;
+}
+
+li .details-container .title {
+  font-weight: var(--fw-bold);
 }
 
 .text-box {

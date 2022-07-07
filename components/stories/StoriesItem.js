@@ -1,20 +1,34 @@
 import Image from 'next/image'
-import test from '../../starter-code/assets/stories/desktop/mountains.jpg'
+import arrow from '../../starter-code/assets/shared/desktop/arrow.svg' 
+import Link from 'next/link'
 
 
 function StoriesItem(props) {
 
-    // const styled={
-    //     backgroundImage: new URL('/../../starter-code/assets/stories/desktop/mountains.jpg')
+    // const router = useRouter();
+
+    // function showStoryHandler() {
+    //     router.push('/' + props.id)
     // }
 
+    
+
    return (
-       <li><Image 
-            src={ test }
-            width="300px"
-            height="300px"
+       <li>
+           <Image 
+            className='story-thumbnail'
+            src={ props.image }
+            width="360px"
+            height="500px"
             alt="Should be image"
+            layout='responsive'
             />
+            <div className='details-container'>
+                <p className='title'>{ props.title }</p>     
+                <p>{ props.author }</p> 
+                <hr></hr>
+                <Link href={ '/stories/' + props.id } ><h4>Read story<Image src={ arrow } alt="arrow"/></h4></Link>
+            </div>
        </li>
    )
 }

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import MainNavigation from '../components/mainNavigation/MainNavigation.js'
 import lake from '../starter-code/assets/home/desktop/create-and-share.jpg' 
 import laptop from '../starter-code/assets/home/desktop/beautiful-stories.jpg'
 import camera from '../starter-code/assets/home/desktop/designed-for-everyone.jpg'
@@ -11,25 +10,9 @@ import Link from 'next/link'
 import StoriesList from '../components/stories/StoriesList.js'
 
 
-export default function Home() {
+function Home(props) {
 
-  const storyArrayOfObject = {
-    story:[
-      {
-        title: "The Mountains",
-        author: "John Appleseed",
-        id: "1",
-        image: { mountain },
-        content: "ipsum lorum"
-      },{
-        title: "Sunset Cityscapes",
-        author: "John Appleseed",
-        id: "1",
-        image: "image-source",
-        content: "ipsum lorum"
-      }
 
-    ]}
 
   return (
     <div>
@@ -39,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
-      <MainNavigation />
+      
 
       <main>
         <div className='section-container'>
@@ -136,7 +119,7 @@ export default function Home() {
         </div>
       </div> {/* section container */}
 
-      <StoriesList story={ storyArrayOfObject.story } />
+      <StoriesList story={ props.stories } />
       </main>
 
       <footer>
@@ -154,3 +137,69 @@ export default function Home() {
     </div>
   )
 }
+
+
+export async function getStaticProps() {
+  // fetch data from an API
+
+  const storyArrayOfObject = [
+    {
+      title: "The Moauntains",
+      author: "John Appleseed",
+      id: "1",
+      image: '/assets/stories/desktop/mountains.jpg',
+      content: "ipsum lorum"
+    },{
+      title: "Sunset Cityscapes",
+      author: "John Appleseed",
+      id: "2",
+      image: '/assets/stories/desktop/cityscapes.jpg',
+      content: "ipsum lorum"
+    },{
+      title: "18 Days Voyage",
+      author: "John Appleseed",
+      id: "3",
+      image: '/assets/stories/desktop/18-days-voyage.jpg',
+      content: "ipsum lorum"
+    },{
+      title: "Architecturals",
+      author: "John Appleseed",
+      id: "4",
+      image: '/assets/stories/desktop/architecturals.jpg',
+      content: "ipsum lorum"
+    },{
+      title: "World Tour 2019",
+      author: "John Appleseed",
+      id: "5",
+      image: '/assets/stories/desktop/world-tour.jpg',
+      content: "ipsum lorum"
+    },{
+      title: "Unforeseen Corners",
+      author: "John Appleseed",
+      id: "6",
+      image: '/assets/stories/desktop/unforeseen-corners.jpg',
+      content: "ipsum lorum"
+    },{
+      title: "Kind on Africa Part 2",
+      author: "John Appleseed",
+      id: "7",
+      image: '/assets/stories/desktop/king-on-africa.jpg',
+      content: "ipsum lorum"
+    },{
+      title: "The Trip to Nowhere",
+      author: "John Appleseed",
+      id: "8",
+      image: '/assets/stories/desktop/trip-to-nowhere.jpg',
+      content: "ipsum lorum"
+    }
+  ]
+
+  return {
+    props: {
+      stories: storyArrayOfObject
+    }
+  }
+}
+
+
+export default Home;
