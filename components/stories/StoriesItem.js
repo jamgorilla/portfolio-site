@@ -23,16 +23,16 @@ function StoriesItem(props) {
             alt="Should be image"
             layout='responsive'
             />
+            <Link href={ '/stories/' + props.id } >
             <div className='details-container'>
                 <p className='title'>{ props.title }</p>     
                 <p>{ props.author }</p> 
                 <div className='straight-line'></div>
-                <Link href={ '/stories/' + props.id } >
                     <h4>Read story 
                         <Image src={ arrow } className="arrow" alt="arrow"/>
                     </h4>
-                </Link>
             </div>
+            </Link>
        </li>
    )
 }
