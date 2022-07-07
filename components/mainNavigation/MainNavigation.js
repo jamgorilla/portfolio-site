@@ -19,11 +19,13 @@ function MainNavigation() {
 
     return <nav className='main-navigation'>
         <div className='photosnap-logo'>
-            <Image 
-                src={ logo } 
-                className="logo" 
-                alt="photosnap-logo" 
-            />
+            <Link href="/" >
+                <Image 
+                    src={ logo } 
+                    className="logo" 
+                    alt="photosnap-logo" 
+                />
+            </Link>
         </div>
             <div className={`nav-page-links-container ${ mobileMenuOpen }`}>
                 <Link href='/stories'><h4>Stories</h4></Link>

@@ -8,7 +8,7 @@ function IndividualStoryPage(props) {
 
     const storyid = parseInt(router.query.storyid);
 
-    console.log('props', props)
+    
 
     // send a request to the backend API
     // to fetch the news item with storyid

@@ -26,8 +26,12 @@ function StoriesItem(props) {
             <div className='details-container'>
                 <p className='title'>{ props.title }</p>     
                 <p>{ props.author }</p> 
-                <hr></hr>
-                <Link href={ '/stories/' + props.id } ><h4>Read story<Image src={ arrow } alt="arrow"/></h4></Link>
+                <div className='straight-line'></div>
+                <Link href={ '/stories/' + props.id } >
+                    <h4>Read story 
+                        <Image src={ arrow } className="arrow" alt="arrow"/>
+                    </h4>
+                </Link>
             </div>
        </li>
    )

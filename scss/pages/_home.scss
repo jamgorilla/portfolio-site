@@ -97,3 +97,35 @@
 
     }
 }
+
+.features-container {
+    display: flex;
+    margin: 6rem 5rem 6rem 5rem;
+    gap: 3rem;
+    justify-content: center;
+
+    @media screen and (max-width: $tablet-max-width) {
+        // tablet and smaller//
+        flex-direction: column;
+    }
+    
+    .single-feature-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        & .image-container {
+            height: 72px !important;
+            display: flex;
+            align-items: center;
+            & span {
+                height: 36px !important;
+            }
+        }
+        & p {
+            text-align: center;
+            max-width: 23rem;
+        }
+    }
+}
