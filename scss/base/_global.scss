@@ -47,6 +47,7 @@ button {
 
 
 
+
 @mixin section-grid-sides($start: 1, $end: 2) {
     grid-column-start: $start;
     grid-column-end: $end;
