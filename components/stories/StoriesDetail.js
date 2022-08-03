@@ -35,7 +35,14 @@ function StoriesDetail(props) {
             <div className='text-holding-div'>
                 <title>{ props.title }</title>
                 <h1>{ props.title }</h1>
+                <br></br>
+
+                <h4>{ props.subtitle }</h4>
+                <br></br>
+            <div className='date-and-author'>
+                <h5>{ props.date }</h5>
                 <p>{ props.author }</p>
+            </div>
                 <p>{ props.content }</p>
             </div>
         </div>

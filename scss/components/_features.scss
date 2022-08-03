@@ -1,0 +1,10 @@
+.section-container {
+    position:relative;
+    
+    & .hero-photographer-picture {
+        @media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+            position: absolute;
+            object-position: 30%;
+        }
+    }
+} 

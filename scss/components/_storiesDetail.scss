@@ -28,6 +28,7 @@
 .detail-page-main-content { 
     display: flex;
     flex-direction: column;
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     height: 60rem;
@@ -35,6 +36,10 @@
     top: 90%;
     color:white;
     gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     // background-attachment: fixed;
 
     // &::after {
@@ -52,9 +57,22 @@
 
     & .text-holding-div {
         position: absolute;
-        bottom: 1rem;
-        margin-top: 20rem; 
+        top: 10rem;
         margin-left: 3rem;
         margin-right: 3rem;
+        padding-top: 3rem; 
+        padding-bottom: 3rem; 
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: calc(100% - 6rem);
+        background-color: var(--clr-pure-white);
+        color: var(--clr-pure-black);
     }
+}
+
+.date-and-author{
+        display: flex;
+        margin-bottom: 1rem;
+        gap: 1rem;
 }

@@ -175,7 +175,7 @@ export async function getStaticProps() {
 
   const storyArrayOfObject = [
     {
-      title: "The Moauntains",
+      title: "The Mountains",
       author: "John Appleseed",
       id: "1",
       image: '/assets/stories/desktop/mountains.jpg',
