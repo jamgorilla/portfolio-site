@@ -1,0 +1,139 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--clr-pure-black);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--clr-pure-black);
+  }
+  
+//   input:focus + .slider {
+//     box-shadow: 0 0 1px blue;
+//   }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: var(--clr-pure-white);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .toggle-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 30rem;
+      margin-top: 4rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2rem;
+  }
+  
+  .rates-container {
+    @media screen and (min-width: $tablet-max-width) {
+        //desktop and above
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+      @media screen and (max-width: $tablet-max-width) {
+        //tablet and below
+        flex-direction: column;
+      }
+  }
+
+
+  .rate-card {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+      @media screen and (min-width: $tablet-max-width) {
+        //desktop and above
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 15rem;
+          margin-bottom: 5rem;
+          & .card-title, .card-content, .term-period {
+              margin-bottom: 1rem;
+            }
+            & .card-content {
+                text-align: center;
+            }
+    }
+    @media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width)  {
+         //tablet
+         display: grid;
+         margin: 1rem;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 2fr 1fr;
+         & .card-title {
+            grid-column: 1/2;
+            grid-row: 1/2;
+         }
+         & .card-content {
+            grid-column: 1/2;
+            grid-row: 2/3;
+         }
+         & .card-price {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            text-align: end;
+         }
+         & .term-period {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            text-align: end;
+         }
+    }
+    @media screen and (max-width: $mobile-max-width) {
+        //mobile
+        display: flex;
+        margin: 1rem;
+        padding: 3rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+  }

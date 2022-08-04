@@ -25,16 +25,6 @@ function Features() {
           <p>
           We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.
           </p>
-          {/* <div className='invite-flex-container'>
-            <Link href="/pricing" className='invite-link'><h4>Get an invite</h4></Link>
-            <Image 
-              layout="fixed" 
-              width="50px" 
-              height="15px" 
-              className='arrow'
-              alt="arrow" 
-              src={ arrow }/>
-          </div> */}
         </div>
       </div>
 
@@ -117,6 +107,8 @@ function Features() {
             </div>
 
       </div> {/* features-container */}
+
+
       </>
     )
 }
