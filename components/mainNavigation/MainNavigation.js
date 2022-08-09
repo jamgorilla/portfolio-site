@@ -14,6 +14,8 @@ function MainNavigation() {
         setMobileMenuOpen((prev) => {
             return !prev;
         })
+
+        console.log( "mobileMenuOpen", mobileMenuOpen )
         
     }
 
@@ -28,9 +30,9 @@ function MainNavigation() {
             </Link>
         </div>
             <div className={`nav-page-links-container ${ mobileMenuOpen }`}>
-                <Link href='/stories'><h4>Stories</h4></Link>
-                <Link href='/features'><h4>Features</h4></Link>
-                <Link href='/pricing'><h4>Pricing</h4></Link>
+                <Link href='/stories'><h4 onClick={ hamburgerHandler }>Stories</h4></Link>
+                <Link href='/features'><h4 onClick={ hamburgerHandler }>Features</h4></Link>
+                <Link href='/pricing'><h4 onClick={ hamburgerHandler }>Pricing</h4></Link>
             </div>
             <div className='button-burger-container'>
                 <Image 

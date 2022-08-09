@@ -20,7 +20,6 @@ function Home(props) {
         <title>PHOTOSNAP</title>
         <meta name="description" content="Photo and story sharing platform" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       
 

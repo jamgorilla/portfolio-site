@@ -72,7 +72,7 @@ function Footer() {
                 alt="arrow" 
                 src={ arrow }/>
             </div>
-            <p>Copyright 2019. All Rights Reserved</p>
+            <p>Copyright 2022. All Rights Reserved</p>
         </div>
 
     </footer>
