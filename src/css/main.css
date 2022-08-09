@@ -1062,6 +1062,9 @@ input:checked + .slider:before {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .features-container .second-feature-container {
+    border: 3px solid aqua;
+  }
 }
 
 .features-container .single-feature-container {
@@ -1098,5 +1101,14 @@ input:checked + .slider:before {
 .features-container .single-feature-container p {
   text-align: center;
   max-width: 23rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .first-feature-container {
+    margin-bottom: 3rem;
+  }
+  .second-feature-container {
+    margin-top: 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

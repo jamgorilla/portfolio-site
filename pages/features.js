@@ -1,6 +1,4 @@
-import arrow from '../starter-code/assets/shared/desktop/arrow.svg' 
 import Image from 'next/image'
-import Link from 'next/link'
 import hero from '../starter-code/assets/features/desktop/hero.jpg' 
 
 
@@ -9,14 +7,12 @@ function Features() {
         <>
         <div className='section-container'>
         <div className='right-image-container'>
-
         <Image 
             className='hero-photographer-picture section-picture'
             src={ hero }  
             layout='responsive' 
-            alt="man standing by lake"
+            alt="man standing with camera"
             />
-
         </div>
         <div className='text-box text-box-left black-text-container'>
           <h1>
@@ -28,7 +24,7 @@ function Features() {
         </div>
       </div>
 
-      <div className='features-container'>
+      <div className='features-container first-feature-container'>
         <div className='single-feature-container'>
           <Image 
             src="/assets/features/desktop/responsive.svg" 
@@ -68,7 +64,7 @@ function Features() {
             </div>
 
       </div> {/* features-container */} 
-      <div className='features-container'>
+      <div className='features-container second-feature-container'>
         <div className='single-feature-container'>
           <Image 
             src="/assets/features/desktop/custom-domain.svg" 
