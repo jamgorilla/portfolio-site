@@ -211,6 +211,7 @@ button:hover {
     width: 100%;
     left: 0;
     border-top: 1rem;
+    margin-top: 0px;
     border-left: 5rem;
     border-bottom: 2rem;
     border-right: 5rem;

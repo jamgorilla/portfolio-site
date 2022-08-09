@@ -11,12 +11,17 @@ function MainNavigation() {
 
     function hamburgerHandler(event){
 
-        setMobileMenuOpen((prev) => {
-            return !prev;
-        })
+        const isLogo = event.target.className;
 
-        console.log( "mobileMenuOpen", mobileMenuOpen )
-        
+        if (isLogo === "logo") {
+            setMobileMenuOpen((prev) => {
+                return false;
+            })
+        } else {
+            setMobileMenuOpen((prev) => {
+                return !prev;
+            })
+        }        
     }
 
     return <nav className='main-navigation'>
@@ -26,6 +31,7 @@ function MainNavigation() {
                     src={ logo } 
                     className="logo" 
                     alt="photosnap-logo" 
+                    onClick={ hamburgerHandler }
                 />
             </Link>
         </div>
@@ -43,11 +49,15 @@ function MainNavigation() {
                     layout='fixed'
                     onClick={ hamburgerHandler }
                 />
-                <Link href='/pricing'>
+                {/* <Link href='/pricing'>
                     <button className={`get-an-invite ${ mobileMenuOpen }`}>
                         <h4>get an invite</h4>
                     </button>
-                </Link>
+                </Link> */}
+                    <button className={`get-an-invite ${ mobileMenuOpen }`}>
+                        <Link href='/pricing'><h4 onClick={ hamburgerHandler }>get an invite</h4>
+                        </Link>
+                    </button>
             </div>
     </nav>
 }
