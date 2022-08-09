@@ -4,6 +4,8 @@ import Link from 'next/link'
 import hero from '../starter-code/assets/pricing/desktop/hero.jpg' 
 import { useState } from 'react'
 import Card from '../components/cards/Card'
+import Compare from '../components/compare/Compare'
+
 
 
 function Pricing(props) {
@@ -11,19 +13,10 @@ function Pricing(props) {
     const [period, setPeriod] = useState(false);
 
     function togglePeriod(event) {
-
         const periodClass = event.target.className;
-
-        // if (periodClass === 'yearly-switch') {
-        //      console.log(event.target.className)
             setPeriod((prev) => {
                 return !prev;
             })
-        // } else {
-        //     console.log(event.target.className, 'OTHER')
-
-        // }
-
     }
 
     return (
@@ -78,6 +71,26 @@ function Pricing(props) {
                 />
                 ) }
         </div>
+
+                <h1 className='compare-table-title'>Compare</h1>
+
+            <div className='compare-table-container'>
+              <div className='compare-table-features'>
+                <h4 className='compare-subtitle'>The Features</h4>
+                <h4 className='compare-removeable'>Basic</h4>
+                <h4 className='compare-removeable'>Pro</h4>
+                <h4 className='compare-removeable'>Business</h4>
+              </div>
+                <hr className='compare-hr'></hr>
+
+                { props.packages.map(p => 
+                  <Compare 
+                  title={ p.title } 
+                  key={ p.id }
+                  ticks={ p.ticks }
+                  />
+                  ) }
+                </div>
         </>
     )
 }
@@ -109,10 +122,47 @@ export async function getStaticProps() {
         big: false
       }
     ]
+
+    const comparePackages = [
+      {
+        title: "Unlimited story posting",
+        id: 0,
+        ticks: [true, true, true]
+      },{
+        title: "Unlimited Photo upload",
+        id: 1,
+        ticks: [true, true, true]
+     },{
+        title: "Embedding custom content",
+        id: 2,
+        ticks: [false, true, true]
+      },{
+        title: "Customize Metadata",
+        id: 3,
+        ticks: [false, true, true]
+      },{
+        title: "Advanced Metrics",
+        id: 4,
+        ticks: [false, false, true]
+     },{
+        title: "Photo Downloads",
+        id: "5",
+        ticks: [false, false, true]
+      },{
+        title: "Search Engine Indexing",
+        id: "6",
+        ticks: [false, false, true]
+      },{
+        title: "Custom Analytics",
+        id: "7",
+        ticks: [false, false, true]
+     }
+    ]
   
     return {
       props: {
-        card: cardsArrayOfObject
+        card: cardsArrayOfObject,
+        packages: comparePackages
       }
     }
   }

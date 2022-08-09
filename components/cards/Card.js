@@ -2,13 +2,11 @@
 
 function Card (props) {
 
-    console.log("title", props.title, props.big )
-
     const styles = {
         backgroundColor: props.big ? 'var(--clr-pure-black)' : 'var(--clr-light-grey)',
         color: props.big ? 'var(--clr-pure-white)' : 'var(--clr-pure-black)',
-        paddingTop: props.big ? '2.5rem' : '1.5rem',
-        paddingBottom: props.big ? '2.5rem' : '1.5rem'
+        paddingTop: props.big ? '3rem' : '1.5rem',
+        paddingBottom: props.big ? '3rem' : '1.5rem'
     }
     return (
         <div className="rate-card" style={ styles }>

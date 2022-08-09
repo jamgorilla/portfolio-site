@@ -39,10 +39,6 @@
     background-color: var(--clr-pure-black);
   }
   
-//   input:focus + .slider {
-//     box-shadow: 0 0 1px blue;
-//   }
-  
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
@@ -63,7 +59,8 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 30rem;
+      width: 50%;
+      max-width: 300px;
       margin-top: 4rem;
       margin-left: auto;
       margin-right: auto;
@@ -131,9 +128,89 @@
         //mobile
         display: flex;
         margin: 1rem;
-        padding: 3rem;
+        padding: 2rem !important;
         flex-direction: column;
         text-align: center;
         gap: 1rem;
       }
   }
+
+  .compare-table-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    @media screen and (max-width: $mobile-max-width) {
+      //mobile
+      visibility: hidden;
+      margin-bottom: 0rem;
+      margin-top: 2rem;
+
+    }
+  }
+
+  
+  .compare-table-container {
+    margin-bottom: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .compare-table-row > span {
+    @media screen and (max-width: $mobile-max-width) {
+      //mobile
+      height: 0px !important;
+    }
+  }
+  
+  .compare-table-features, .compare-table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    text-align:  center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    & .compare-subtitle {
+      text-align: start;
+    }
+    
+    & .tick {
+      object-fit: contain;
+    }
+  }
+  
+  .compare-hr, .compare-hr-grey{
+    max-width: 52rem;
+  }
+  
+  .compare-hr-grey {
+    height: 1px;
+    background-color: var(--clr-light-grey);
+    border: none;
+  }
+
+  .basic-pro-biz-container {
+    display: none;
+  }
+  .tick-list {
+    display: none;
+  }
+  
+  @media screen and (max-width: $mobile-max-width) {
+    //mobile
+    .compare-removeable {
+      visibility: hidden;
+    }
+    .compare-table-row {
+      display: flex;
+      flex-direction: column;
+    }
+    .basic-pro-biz-container, .tick-list{
+      display: flex;
+      justify-content: space-between;
+      visibility: visible;
+      margin-right: 2rem;
+      margin-top: 1rem;
+    }
+    
+  }
+  
+  
