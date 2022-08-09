@@ -8,6 +8,8 @@ import arrow from '../starter-code/assets/shared/desktop/arrow.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import StoriesList from '../components/stories/StoriesList.js'
+import Invite from '../components/invite/Invite.js'
+
 
 
 function Home(props) {
@@ -42,16 +44,7 @@ function Home(props) {
               Photosnap is a platform for photographers and visual storytellers. We make it 
               easy to share photos, tell stories and connect with others.
             </p>
-            <div className='invite-flex-container'>
-              <Link href="/pricing" className='invite-link'><h4>Get an invite</h4></Link>
-              <Image 
-                layout="fixed" 
-                width="50px" 
-                height="15px" 
-                className='arrow'
-                alt="arrow" 
-                src={ arrow }/>
-            </div>
+            <Invite />
           </div>
         </div> {/* section container */}
 

@@ -89,6 +89,8 @@ h4 {
 
 p {
   font-weight: var(--fw-regular);
+  opacity: 0.75;
+  line-height: 25px;
 }
 
 button {
@@ -485,6 +487,7 @@ li .details-container h4 .arrow {
 
 li .details-container .title {
   font-weight: var(--fw-bold);
+  opacity: 1;
 }
 
 .main-picture {
@@ -549,12 +552,48 @@ li .details-container .title {
   gap: 1rem;
 }
 
+.featured-story-container {
+  position: relative;
+}
+
 .featured-story-text {
   position: absolute;
-  top: 40%;
+  bottom: 7rem;
   width: 25rem;
   color: white;
   margin-left: 5rem;
+  line-height: 2.5rem;
+}
+
+.featured-story-text .feature-story-content {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1140px) {
+  .featured-story-text {
+    bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1140px) and (max-width: 925px) {
+  .featured-story-text {
+    margin-left: 3rem;
+  }
+  .featured-story-text .feature-story-content {
+    display: none;
+  }
+}
+
+.feature-author {
+  opacity: 1;
+}
+
+.feature-date-n-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
 }
 
 .section-container {

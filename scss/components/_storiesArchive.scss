@@ -1,8 +1,35 @@
+.featured-story-container {
+    position: relative;
+}
+
 .featured-story-text {
     position: absolute;
-    top: 40%;
+    bottom: 7rem;
     width: 25rem;
     color: white;
     margin-left: 5rem;
+    line-height: 2.5rem;
+    & .feature-story-content {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
 
+    }
+    @media screen and (max-width: 1140px) {
+        bottom: 1.5rem;
+        @media screen and (max-width: 925px) {
+            margin-left: 3rem;
+            & .feature-story-content {
+                display: none;
+
+            }
+        }
+    }
+}
+
+.feature-author {
+    opacity: 1;
+}
+.feature-date-n-title-container {
+    display: flex;
+    gap: 1rem;
 }

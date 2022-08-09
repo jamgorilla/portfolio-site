@@ -3,30 +3,33 @@ import Image from 'next/image'
 import moons from '../../public/assets/stories/desktop/moon-of-appalacia.jpg' 
 import { Fragment } from 'react';
 import StoriesList from '../../components/stories/StoriesList';
+import Invite from '../../components/invite/Invite';
+
 
 function Stories( props ) {
     
     return <Fragment>
-        <Image 
-            className='featured-story-image'
-            src={ moons }
-            width="1440px"
-            height="650px"
-            alt="Should be image"
-            layout='responsive'
-        />
-        <div className='featured-story-text'>
-            <h4>Last month featured story</h4>
-            <h1>Hazy full moon of the appalacia</h1>
-            <p>March 2nd 2020</p>
-            <p><strong>by John Appleseed</strong></p>
-            <p>The dissected plateau area, while not actually made up of geological mountains, is popularly called &quot;mountains,&quot; especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.</p>
+      <div className='featured-story-container' >
+          <Image 
+              className='featured-story-image'
+              src={ moons }
+              width="1440px"
+              height="650px"
+              alt="Should be image"
+              layout='responsive'
+              />
+          <div className='featured-story-text'>
+              <h4>Last month featured story</h4>
+              <h1>Hazy full moon of the appalacia</h1>
+              <div className='feature-date-n-title-container'>
+              <p>March 2nd 2020</p>
+              <p className='feature-author'>by John Appleseed</p>
+              </div>
+              <p className='feature-story-content'>The dissected plateau area, while not actually made up of geological mountains, is popularly called &quot;mountains,&quot; especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.</p>
+              <Invite />
+          </div>
         </div>
         <StoriesList story={ props.stories }/>
-        <ul>
-            <li><Link href='/stories/Mountains'>Mountains</Link></li>
-            <li><Link href='/stories/Sunset'>Sunset</Link></li>
-        </ul>
         </Fragment>
 }
 

@@ -49,11 +49,6 @@ function MainNavigation() {
                     layout='fixed'
                     onClick={ hamburgerHandler }
                 />
-                {/* <Link href='/pricing'>
-                    <button className={`get-an-invite ${ mobileMenuOpen }`}>
-                        <h4>get an invite</h4>
-                    </button>
-                </Link> */}
                     <button className={`get-an-invite ${ mobileMenuOpen }`}>
                         <Link href='/pricing'><h4 onClick={ hamburgerHandler }>get an invite</h4>
                         </Link>

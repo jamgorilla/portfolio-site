@@ -4,7 +4,7 @@ import youtube from '../../starter-code/assets/shared/desktop/youtube.svg';
 import twitter from '../../starter-code/assets/shared/desktop/twitter.svg';
 import pinterest from '../../starter-code/assets/shared/desktop/pinterest.svg';
 import instagram from '../../starter-code/assets/shared/desktop/instagram.svg';
-import arrow from '../../starter-code/assets/shared/desktop/arrow.svg' 
+import Invite from '../invite/Invite.js' 
  
 
 
@@ -62,16 +62,7 @@ function Footer() {
             </ul>
         </div>
         <div className='footer-right-section'>
-            <div className='invite-flex-container'>
-              <Link href="/pricing" className='invite-link'><h4>Get an invite</h4></Link>
-              <Image 
-                layout="fixed" 
-                width="50px" 
-                height="15px" 
-                className='arrow'
-                alt="arrow" 
-                src={ arrow }/>
-            </div>
+            <Invite />
             <p>Copyright 2022. All Rights Reserved</p>
         </div>
 
