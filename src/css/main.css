@@ -492,6 +492,11 @@ li .details-container .title {
   opacity: 1;
 }
 
+li:hover {
+  -webkit-transform: translate(0px, -30px);
+          transform: translate(0px, -30px);
+}
+
 .main-picture {
   width: 100%;
 }
