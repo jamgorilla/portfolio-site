@@ -10,13 +10,14 @@ function Stories( props ) {
     
     return <Fragment>
       <div className='featured-story-container' >
-          <Image 
+          <Image
               className='featured-story-image'
               src={ moons }
               width="1440px"
               height="650px"
               alt="Should be image"
-              layout='responsive'
+              layout='fill'
+              objectFit='cover'
               />
           <div className='featured-story-text'>
               <h4>Last month featured story</h4>

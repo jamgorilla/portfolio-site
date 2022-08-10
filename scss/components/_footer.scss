@@ -101,7 +101,9 @@ footer {
         .social-icons {
             grid-row-start: 2;
             grid-row-end: 3;
-            width: 50%;
+            max-width: 290px;
+            min-width: 140px;
+            max-height: 21.688px;
             height: 35%;
         }
         .footer-middle-section {

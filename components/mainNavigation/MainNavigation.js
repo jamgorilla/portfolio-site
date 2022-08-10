@@ -3,7 +3,7 @@ import hamburger from '../../starter-code/assets/shared/mobile/menu.svg';
 import cross from '../../starter-code/assets/shared/mobile/close.svg';
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function MainNavigation() {
 

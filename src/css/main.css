@@ -378,7 +378,9 @@ footer .footer-right-section p {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
-    width: 50%;
+    max-width: 290px;
+    min-width: 140px;
+    max-height: 21.688px;
     height: 35%;
   }
   footer .footer-middle-section {
@@ -570,18 +572,40 @@ li .details-container .title {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1140px) {
-  .featured-story-text {
-    bottom: 1.5rem;
+.featured-story-container {
+  height: 650px;
+}
+
+@media screen and (max-width: 925px) {
+  .featured-story-container {
+    background-color: blue !important;
+    height: 700px;
+  }
+  .featured-story-container .featured-story-image img {
+    height: 700px;
   }
 }
 
-@media screen and (max-width: 1140px) and (max-width: 925px) {
-  .featured-story-text {
-    margin-left: 3rem;
+@media screen and (max-width: 768px) {
+  .featured-story-container {
+    position: relative;
+    background-color: blue !important;
+    margin-bottom: 500px;
   }
-  .featured-story-text .feature-story-content {
-    display: none;
+  .featured-story-container .featured-story-text {
+    position: absolute;
+    height: 700px;
+    background-color: black;
+    bottom: -700px;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 4rem;
+  }
+  .featured-story-container .featured-story-text h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -694,6 +718,9 @@ input:checked + .slider:before {
             justify-content: center;
     gap: 2rem;
   }
+  .rates-container .rate-card .card-content {
+    min-height: 125px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -703,6 +730,16 @@ input:checked + .slider:before {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.rates-container .rate-card .pick-plan-btn.false:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.rates-container .rate-card .pick-plan-btn.true:hover {
+  background-color: black !important;
+  color: white !important;
 }
 
 .rate-card {
@@ -881,6 +918,9 @@ input:checked + .slider:before {
     visibility: visible;
     margin-right: 2rem;
     margin-top: 1rem;
+  }
+  .tick-list {
+    margin-right: 3rem;
   }
 }
 

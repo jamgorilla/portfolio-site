@@ -74,6 +74,9 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        & .rate-card .card-content {
+          min-height: 125px;
+        }
       }
       @media screen and (max-width: $tablet-max-width) {
         //tablet and below
@@ -81,6 +84,15 @@
       }
   }
 
+  .rates-container .rate-card .pick-plan-btn.false:hover {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .rates-container .rate-card .pick-plan-btn.true:hover {
+    background-color: black !important;
+    color: white !important;
+  }
 
   .rate-card {
     padding-left: 1.5rem;
@@ -210,7 +222,9 @@
       margin-right: 2rem;
       margin-top: 1rem;
     }
-    
+    .tick-list{ 
+      margin-right: 3rem;
+    }
   }
   
   
