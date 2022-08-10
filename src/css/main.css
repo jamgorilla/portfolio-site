@@ -492,9 +492,17 @@ li .details-container .title {
   opacity: 1;
 }
 
-li:hover {
-  -webkit-transform: translate(0px, -30px);
-          transform: translate(0px, -30px);
+@media screen and (min-width: 768px) {
+  li {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
+  li:hover {
+    -webkit-transform: translate(0px, -30px);
+            transform: translate(0px, -30px);
+  }
 }
 
 .main-picture {

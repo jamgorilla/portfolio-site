@@ -54,7 +54,10 @@ li {
             opacity: 1;;
         }
     }
-    &:hover {
-        transform: translate(0px, -30px);
+    @media screen and (min-width: $mobile-max-width) {
+        transition: transform 1s;
+        &:hover {
+            transform: translate(0px, -30px);
+        }
     }
 }
