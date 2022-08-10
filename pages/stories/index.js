@@ -13,8 +13,6 @@ function Stories( props ) {
           <Image
               className='featured-story-image'
               src={ moons }
-              width="1440px"
-              height="650px"
               alt="Should be image"
               layout='fill'
               objectFit='cover'
