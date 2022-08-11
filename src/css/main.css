@@ -511,8 +511,13 @@ li .details-container .title {
      object-fit: cover;
 }
 
+.detail-page-image-container {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
 @media screen and (max-width: 768px) {
-  .right-image-container {
+  .detail-page-image-container {
     height: 500px;
   }
 }

@@ -80,9 +80,12 @@
 .detail-page-image {
     object-fit: cover;
 }
+.detail-page-image-container {
+    filter: brightness(70%);
+}
 @media screen and (max-width: $mobile-max-width ) {
     //mobile
-    .right-image-container {
+    .detail-page-image-container {
         height: 500px;
     }
 }

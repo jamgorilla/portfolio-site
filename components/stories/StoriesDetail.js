@@ -50,7 +50,7 @@ function StoriesDetail(props) {
         </div> */}
         
         <div className='section-container'>
-          <div className='right-image-container'>
+          <div className='right-image-container detail-page-image-container'>
 
           <Image 
               className='detail-page-image'
