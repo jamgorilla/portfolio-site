@@ -53,24 +53,31 @@ function StoriesDetail(props) {
           <div className='right-image-container'>
 
           <Image 
-              className='lake-photographer-picture section-picture'
+              className='detail-page-image'
               src={ props.image }  
               width="360px"
               height="500px"
               layout='responsive' 
-              alt="man standing by lake"/>
+              alt="dynamically generated story image"/>
 
           </div>
-          <div className='text-box text-box-left black-text-container'>
+          <div className='text-box text-box-left black-text-container detail-page-black-section'>
             <h1>
-              Create and share your photo Stories
+              { props.title }
             </h1>
-            <p>
-              Photosnap is a platform for photographers and visual storytellers. We make it 
-              easy to share photos, tell stories and connect with others.
-            </p>
+            <h5 className='story-detail-subtitle'>
+              { props.subtitle }
+            </h5>
+              <div className='date-and-author'>
+                <h5>{ props.date }</h5>
+                <p>by { props.author }</p>
+            </div>
           </div>
         </div> {/* section container */}
+
+        <div className="story-detail-content-container">
+            <p className='story-detail-content'>{ props.content }</p>
+        </div>
 
         </Fragment>
     );

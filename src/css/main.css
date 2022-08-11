@@ -506,66 +506,48 @@ li .details-container .title {
   }
 }
 
-.main-picture {
-  width: 100%;
+.detail-page-image {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.gradient-overlay {
-  position: relative;
+@media screen and (max-width: 768px) {
+  .right-image-container {
+    height: 500px;
+  }
 }
 
-.gradient-overlay::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.1)), to(black));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 10%, black 100%);
+.detail-page-black-section {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
 }
 
-.detail-page-main-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 60rem;
-  top: 90%;
-  color: white;
-  gap: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
+.story-detail-subtitle {
+  margin-top: 1rem;
 }
 
-.detail-page-main-content .text-holding-div {
-  position: absolute;
-  top: 10rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: calc(100% - 6rem);
-  background-color: var(--clr-pure-white);
-  color: var(--clr-pure-black);
+.story-detail-content-container {
+  padding: 4rem;
 }
 
 .date-and-author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   gap: 1rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.story-detail-content::first-letter {
+  font-size: 4em;
+  float: left;
+  padding-right: 16px;
+  padding-top: 10px;
 }
 
 .featured-story-container {
