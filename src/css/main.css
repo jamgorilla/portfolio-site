@@ -619,6 +619,11 @@ li .details-container .title {
   position: relative;
 }
 
+.section-container .hero-photographer-picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .section-container .hero-photographer-picture {
     position: absolute;
