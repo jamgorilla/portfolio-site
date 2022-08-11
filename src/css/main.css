@@ -466,9 +466,10 @@ li .details-container {
 li .details-container .straight-line {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  height: 0.01rem;
+  height: 0.05rem;
   width: 100%;
   background-color: white;
+  opacity: 0.5;
 }
 
 li .details-container h4 {
@@ -591,7 +592,6 @@ li .details-container .title {
 
 @media screen and (max-width: 925px) {
   .featured-story-container {
-    background-color: blue !important;
     height: 700px;
   }
   .featured-story-container .featured-story-image img {
@@ -602,8 +602,8 @@ li .details-container .title {
 @media screen and (max-width: 768px) {
   .featured-story-container {
     position: relative;
-    background-color: blue !important;
-    margin-bottom: 500px;
+    height: 400px;
+    margin-bottom: 550px;
   }
   .featured-story-container .featured-story-text {
     position: absolute;

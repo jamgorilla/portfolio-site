@@ -22,7 +22,6 @@
 @media screen and (max-width: 925px) {
     .featured-story-container {
         //position: relative;
-        background-color: blue !important;
         height: 700px;
         & .featured-story-image img {
             height: 700px;
@@ -32,11 +31,10 @@
 @media screen and (max-width: $mobile-max-width) {
     .featured-story-container {
         position: relative;
-        background-color: blue !important;
-        //height: 1400px;
+        height: 400px;
         // display: flex;
         // flex-direction: column;
-        margin-bottom: 500px;
+        margin-bottom: 550px;
         & .featured-story-text {
             position: absolute;
             height: 700px;

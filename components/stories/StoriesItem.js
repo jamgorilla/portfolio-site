@@ -15,7 +15,7 @@ function StoriesItem(props) {
 
    return (
        <li>
-           <Image 
+           <Image  
             className='story-thumbnail'
             src={ props.image }
             width="360px"
