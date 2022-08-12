@@ -55,6 +55,8 @@ li {
             opacity: 1;;
         }
     }
+}
+.stories-li {
     @media screen and (min-width: $mobile-max-width) {
         transition: transform 1s;
         &:hover {

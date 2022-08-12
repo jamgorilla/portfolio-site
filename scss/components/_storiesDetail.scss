@@ -92,8 +92,8 @@
 .detail-page-black-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
 }
 
 .story-detail-subtitle {
@@ -101,7 +101,10 @@
 }
 
 .story-detail-content-container {
-    padding: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .date-and-author {
     display: flex;

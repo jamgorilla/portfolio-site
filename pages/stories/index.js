@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image'
 import moons from '../../public/assets/stories/desktop/moon-of-appalacia.jpg' 
 import { Fragment } from 'react';

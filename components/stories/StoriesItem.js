@@ -14,7 +14,7 @@ function StoriesItem(props) {
     
 
    return (
-       <li>
+       <li className='stories-li'>
            <Image  
             className='story-thumbnail'
             src={ props.image }

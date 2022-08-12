@@ -294,6 +294,7 @@ footer ul li:first-child {
 
 footer h4:hover {
   color: grey;
+  text-decoration: underline;
 }
 
 footer .footer-right-section {
@@ -494,13 +495,13 @@ li .details-container .title {
 }
 
 @media screen and (min-width: 768px) {
-  li {
+  .stories-li {
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
   }
-  li:hover {
+  .stories-li:hover {
     -webkit-transform: translate(0px, -30px);
             transform: translate(0px, -30px);
   }
@@ -525,8 +526,8 @@ li .details-container .title {
 .detail-page-black-section {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
-  padding-left: 4rem !important;
-  padding-right: 4rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
 .story-detail-subtitle {
@@ -534,7 +535,10 @@ li .details-container .title {
 }
 
 .story-detail-content-container {
-  padding: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .date-and-author {

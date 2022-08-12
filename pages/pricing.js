@@ -1,6 +1,4 @@
-import arrow from '../starter-code/assets/shared/desktop/arrow.svg' 
 import Image from 'next/image'
-import Link from 'next/link'
 import hero from '../starter-code/assets/pricing/desktop/hero.jpg' 
 import { useState } from 'react'
 import Card from '../components/cards/Card'
@@ -34,10 +32,10 @@ function Pricing(props) {
         </div>
         <div className='text-box text-box-left black-text-container'>
           <h1>
-            Features
+            Pricing
           </h1>
           <p>
-          We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.
+          Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.
           </p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import logo from '../../starter-code/assets/shared/desktop/logo.svg';
 import hamburger from '../../starter-code/assets/shared/mobile/menu.svg';
 import cross from '../../starter-code/assets/shared/mobile/close.svg';
+import CustomForwardImage from './CustomForwardImage.js';
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -34,7 +35,6 @@ function MainNavigation() {
 // Hook for detecting window size
 function useWindowSize() {
     // Initialize state with undefined width/height so server and client renders match
-    // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
     const [windowSize, setWindowSize] = useState({
       width: undefined,
       height: undefined,
@@ -70,10 +70,10 @@ function useWindowSize() {
     return <nav className='main-navigation'>
         <div className='photosnap-logo'>
             <Link href="/" >
-                <Image 
+                <CustomForwardImage 
                     src={ logo } 
                     className="logo" 
-                    alt="photosnap-logo" 
+                    alt="photosnap-logo"
                     onClick={ hamburgerHandler }
                 />
             </Link>

@@ -2,8 +2,6 @@ import Head from 'next/head'
 import lake from '../starter-code/assets/home/desktop/create-and-share.jpg' 
 import laptop from '../starter-code/assets/home/desktop/beautiful-stories.jpg'
 import camera from '../starter-code/assets/home/desktop/designed-for-everyone.jpg'
-import mountain from '../starter-code/assets/stories/desktop/mountains.jpg'
-
 import arrow from '../starter-code/assets/shared/desktop/arrow.svg' 
 import Image from 'next/image'
 import Link from 'next/link'
