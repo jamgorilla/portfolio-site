@@ -7,7 +7,7 @@ function CustomForwardImage ({ src, className, alt, onClick}, ref ) {
             src={ src } 
             className={ className } 
             alt={ alt }
-            onClick={ onClick }
+            onClick={ onClick } 
         />
     )
 }

@@ -1,12 +1,13 @@
 import Image from 'next/image'
-import React from 'react'
+import React from 'react' 
 
-function CustomFooterForwardImage ({ src, className, alt}, ref ) {
+function CustomFooterForwardImage ({ src, className, alt, onClick}, ref ) {
     return (
         <Image 
             src={ src } 
             className={ className } 
             alt={ alt }
+            onClick={ onClick } 
         />
     )
 }

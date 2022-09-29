@@ -1,102 +1,57 @@
-import logo from '../../starter-code/assets/shared/desktop/logo.svg';
-import hamburger from '../../starter-code/assets/shared/mobile/menu.svg';
-import cross from '../../starter-code/assets/shared/mobile/close.svg';
 import CustomForwardImage from './CustomForwardImage.js';
 import Image from 'next/image'
+import logo from '../../public/assets/JM-logo-v0.2.svg'
+import logoGrey from '../../public/assets/JM-logo-medium-grey.svg'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
 function MainNavigation() {
 
-    const [ mobileMenuOpen, setMobileMenuOpen  ] = useState(false);
+    const [open, setOpen] = useState(false);
 
-    const size = useWindowSize();
-    
-    function hamburgerHandler(event){
-
-        const isLogo = event.target.className;
-
-        if (size.width > 768) {
-            setMobileMenuOpen((prev) => {
-                return false;
-            })
-        } else if (isLogo === "logo") {
-            setMobileMenuOpen((prev) => {
-                return false;
-            })
-        } else {
-            setMobileMenuOpen((prev) => {
-                return !prev;
-            })
-        }        
+    function toggleNavMenu () {
+        setOpen((prev) => !prev );
     }
 
-
-// Hook for detecting window size
-function useWindowSize() {
-    // Initialize state with undefined width/height so server and client renders match
-    const [windowSize, setWindowSize] = useState({
-      width: undefined,
-      height: undefined,
-    });
-  
     useEffect(() => {
-      // only execute all the code below in client side
-      if (typeof window !== 'undefined') {
-        // Handler to call on window resize
-        function handleResize() {
-          // Set window width/height to state
-          setWindowSize({
-            width: window.innerWidth,
-            height: window.innerHeight,
-          });
+        if (open === true) {
+            //add open class to body
+            document.body.classList.add( 'open' );
+        } else {
+            //remove open class from body
+            document.body.classList.remove( 'open' );
         }
-      
-        // Add event listener
-        window.addEventListener("resize", handleResize);
-       
-        // Call handler right away so state gets updated with initial window size
-        handleResize();
-      
-        // Remove event listener on cleanup
-        return () => window.removeEventListener("resize", handleResize);
-      }
-    }, []); // Empty array ensures that effect is only run on mount
-    return windowSize;
-  }
-
-  
-
+    }, [open])
+    
     return <nav className='main-navigation'>
-        <div className='photosnap-logo'>
-            <Link href="/" >
-                <CustomForwardImage 
-                    src={ logo } 
-                    className="logo" 
-                    alt="photosnap-logo"
-                    onClick={ hamburgerHandler }
-                />
-            </Link>
+        <div className='left-section-nav'>
+            <Image 
+            src={ open ? logoGrey : logo }
+            //layout='responsive'
+            height={'48px'}
+            width={'48px'}
+            alt="logo"
+            className='JM-logo'
+            />
+            <div className='name-and-role'>
+                <h2 className='header-name'>James Murphy</h2>
+                <h4 className='header-job-title'>Web Developer</h4>
+            </div>
         </div>
-            <div className={`nav-page-links-container ${ mobileMenuOpen }`}>
-                <Link href='/stories'><h4 onClick={ hamburgerHandler }>Stories</h4></Link>
-                <Link href='/features'><h4 onClick={ hamburgerHandler }>Features</h4></Link>
-                <Link href='/pricing'><h4 onClick={ hamburgerHandler }>Pricing</h4></Link>
+        <div className='right-section-nav'>
+            <div 
+                className={ `hamburger-container btn1 ${open && 'open'}` }
+                onClick={ toggleNavMenu }>
+                <div className='icon-left'></div>
+                <div className='icon-right'></div>
             </div>
-            <div className='button-burger-container'>
-                <Image 
-                    src={ mobileMenuOpen === true ? cross : hamburger } 
-                    open={ mobileMenuOpen }
-                    className='hamburger' 
-                    alt="hamburger" 
-                    layout='fixed'
-                    onClick={ hamburgerHandler }
-                />
-                    <button className={`get-an-invite ${ mobileMenuOpen }`}>
-                        <Link href='/pricing'><h4 onClick={ hamburgerHandler }>get an invite</h4>
-                        </Link>
-                    </button>
-            </div>
+        </div>
+        <ul className='menu-container'>
+            <li><Link href="/"><h1>Projects</h1></Link></li>
+            <li><Link href="/"><h1>About me</h1></Link></li>
+            <li><Link href="/"><h1>Contact</h1></Link></li>        
+        </ul>
+
     </nav>
 }
 

@@ -14,6 +14,7 @@
     --clr-main-accent-blue: hsl(229, 100%, 67%);
   
     --clr-pure-black: hsl(0, 0%, 0%);
+    --clr-medium-grey: rgb(128,128,128);
     --clr-light-grey: hsl(0, 0%, 87%);
     --clr-pure-white: hsl(0, 0%, 100%);
   
@@ -23,7 +24,12 @@
     // --fs-900: 2rem;
     
     /* buttons */
-    
+
+    --icon-width: 20px; // shortness of sections  20px
+    --move-left-half-to-right: 13px; // ^closer  10px
+    --icon-height: 5px; //thickness of sections 5px
+    --scale-x: 1.4; //original 1.4 size
+    --hamburger-vertical-gap: 14px; // 16px
 }
 
 /* breakpoints */
