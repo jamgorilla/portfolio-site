@@ -1,6 +1,8 @@
 import CustomForwardImage from './CustomForwardImage.js';
 import Image from 'next/image'
-import logo from '../../public/assets/JM-logo-v0.2.svg'
+import logo from '../../public/assets/JM-logo-v0.5.svg'
+//import logo from '../../public/assets/JM-logo-thin-orange.svg'
+
 import logoGrey from '../../public/assets/JM-logo-medium-grey.svg'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -28,14 +30,14 @@ function MainNavigation() {
             <Image 
             src={ open ? logoGrey : logo }
             //layout='responsive'
-            height={'48px'}
-            width={'48px'}
+            height={'58px'}
+            width={'58px'}
             alt="logo"
             className='JM-logo'
             />
             <div className='name-and-role'>
                 <h2 className='header-name'>James Murphy</h2>
-                <h4 className='header-job-title'>Web Developer</h4>
+                <h4 className='header-job-title'>UI Designer & Web Developer</h4>
             </div>
         </div>
         <div className='right-section-nav'>

@@ -1,15 +1,17 @@
-body {
-    margin: 3rem;
-}
+// body {
+//     margin: 3rem;
+// }
 main {
     position: relative;
     margin-right: 5rem;
     margin-left: 5rem;
+    z-index: 0;
 }
 main:before {
     content: ' ';
     display: block;
     position: absolute;
+    //z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
@@ -27,22 +29,75 @@ main:before {
 }
 
 
-// @keyframes dash{
-//     to {
-//         stroke-dashoffset: 0;
 
-//     }
+
+.view-projects-button {
+    position: relative;
+    z-index: 900;
+    color: var(--clr-main-orange-1-redder);
+    &:hover {
+        cursor: pointer;
+    }
+    
+}
+
+
+// /////////
+// .outside {
+// 	text-transform: uppercase;
+// 	letter-spacing: .5em;
+// 	display: inline-block;
+// 	border: 4px double rgba(255,255,255,.25);
+// 	//border-width: 4px 0;
+// 	//padding: 1.5em 0em;
+// 	position: absolute;
+// 	top: 10%;
+// 	//left: 50%;
+// 	width: 40em;
+// 	margin: 1rem 0 0 -1rem;
+//     opacity: 0.4;
+  
+//   span {
+
+//   	font: 700 4em "Oswald", sans-serif;
+//   	letter-spacing: 0;
+//   	//padding: .25em 0 .325em;
+// 	  display: block;
+// 	  //margin: 0 auto;
+//   	text-shadow: 0 0 80px rgba(255,255,255,.5);
+//     filter: grayscale(1);
+
+// /* Clip Background Image */
+
+// 	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+// 	  -webkit-background-clip: text;
+// 	  background-clip: text;
+
+// /* Animate Background Image */
+
+// 	  -webkit-text-fill-color: transparent;
+// 	  -webkit-animation: aitf 80s linear infinite;
+
+// /* Activate hardware acceleration for smoother animations */
+
+// 	  -webkit-transform: translate3d(0,0,0);
+// 	  -webkit-backface-visibility: hidden;
+
+//   }
 // }
 
+// /* Animate Background Image */
 
-// #developer-d, #developer-eveloper {
-//     stroke-dasharray: 2000;
-//     stroke-dashoffset: 2000;
-//     animation: dash 3s ease-in forwards;
+// @-webkit-keyframes aitf {
+// 	0% { background-position: 0% 50%; }
+// 	100% { background-position: 100% 50%; }
 // }
+
+// ///////////////////
 
 
 .title-section {
+    margin-top: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,55 +110,6 @@ main:before {
 .projects-title {
     margin-bottom: 4rem;
 }
-// .snack-man {
-//     position: fixed;
-//     //z-index: 999;
-//     top: 100;
-//     filter: grayscale(100%);
-// }
 
-.project-list-container {
-    position: relative;  
-}
-.project-list-container2 {
-    position: relative;  
-    margin-top: 40rem;
-}
 
-.photohero-container {
-    width: 30rem;
-    position: absolute;
-    right: 20rem;
-    top: 10rem;
-    z-index: 3;
-    opacity: 0;
-}
-.photolist-container {
-    width: 30rem;
-    position: absolute;
-    right: 0rem;
-    top: 0rem;
-    opacity: 0;
-}
 
-@keyframes anim1 {
-    from {
-        transform: translateX(-300px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes anim2 {
-    from {
-        transform: translateX(300px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}

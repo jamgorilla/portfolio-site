@@ -19,15 +19,14 @@ body.open .left-section-nav {
 }
 
 .name-and-role {
-    margin-left: 1rem;
+  margin-top: 0.4rem;
+    margin-left: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: .8rem;
 }
 
-.header-job-title {
-    letter-spacing: 5px;
-}
 
 
 // .right-section-nav {
@@ -55,7 +54,7 @@ body.open .left-section-nav {
       height: var(--icon-height);
       width: var(--icon-width);
       top: 30px;
-      background-color: var(--clr-pure-black);
+      background-color: var(--clr-main-orange);
       left: var(--move-left-half-to-right); 
 
       &:before{
@@ -63,7 +62,7 @@ body.open .left-section-nav {
         position: absolute;
         width: var(--icon-width);
         height: var(--icon-height);
-        background-color: var(--clr-pure-black);
+        background-color: var(--clr-main-orange);
         content: "";
         top: calc(var(--hamburger-vertical-gap) * -1);
       }
@@ -73,7 +72,7 @@ body.open .left-section-nav {
         position: absolute;
         width: var(--icon-width);
         height: var(--icon-height);
-        background-color: var(--clr-pure-black);
+        background-color: var(--clr-main-orange);
         content: "";
         top: var(--hamburger-vertical-gap);
       }
@@ -85,7 +84,7 @@ body.open .left-section-nav {
       height: var(--icon-height);
       width: var(--icon-width);
       top: 30px;
-      background-color: var(--clr-pure-black);
+      background-color: var(--clr-main-orange);
       left: 30px;
       
       &:before{
@@ -93,7 +92,7 @@ body.open .left-section-nav {
         position: absolute;
         width: var(--icon-width);
         height: var(--icon-height);
-        background-color: var(--clr-pure-black);
+        background-color: var(--clr-main-orange);
         content: "";
         top: calc(var(--hamburger-vertical-gap) * -1);
       }
@@ -103,7 +102,7 @@ body.open .left-section-nav {
         position: absolute;
         width: var(--icon-width);
         height: var(--icon-height);
-        background-color: var(--clr-pure-black);
+        background-color: var(--clr-main-orange);
         content: "";
         top:  var(--hamburger-vertical-gap);
       }
