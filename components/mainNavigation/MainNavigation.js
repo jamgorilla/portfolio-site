@@ -49,6 +49,7 @@ function MainNavigation() {
             </div>
         </div>
         <ul className='menu-container'>
+            <li><Link href="/"><h1>Home</h1></Link></li>
             <li><Link href="/"><h1>Projects</h1></Link></li>
             <li><Link href="/"><h1>About me</h1></Link></li>
             <li><Link href="/"><h1>Contact</h1></Link></li>        

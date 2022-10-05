@@ -8,7 +8,6 @@ function IndividualProjectPage(props) {
 
     const projectid = parseInt(router.query.projectid);
 
-    
 
     // send a request to the backend API
     // to fetch the news item with projectid

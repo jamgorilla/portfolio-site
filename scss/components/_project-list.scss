@@ -64,7 +64,7 @@
     & .orange-line {
         background-color: var(--clr-main-orange-2-yellower);
         height: .3rem;
-        width: 40rem;
+        width: 30rem;
         opacity: 0;
     }
     & .see-details {
@@ -76,6 +76,7 @@
         }
     }
 }
+
 
 @keyframes anim1 {
     0% {

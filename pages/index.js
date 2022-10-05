@@ -47,7 +47,7 @@ const numList = [0,1,2,3,4];
         <title>James Murphy Portfolio</title>
         <meta name="description" content="James Murphy Web Development Portfolio" />
         <link rel="icon" href="/assets/JM-logo-v0.2.svg" />
-        <link rel="stylesheet" href="https://use.typekit.net/xqn6tpy.css"></link>
+        {/* <link rel="stylesheet" href="https://use.typekit.net/xqn6tpy.css"></link> */}
       </Head>
       
       
