@@ -2,11 +2,13 @@ import { Fragment  } from 'react';
 import Image from 'next/image'
 import CustomForwardImage from './CustomForwardImage.js';
 import Link from 'next/link'
-import ProjectList from './ProjectList'
+import WebsiteList from '../websiteList/WebsiteList'
 
 
 
 function ProjectDetail(props) {
+
+    //props.webSiteList
 
     return (
         <Fragment>
@@ -17,19 +19,14 @@ function ProjectDetail(props) {
                     <h2 className='project-detail-title'>
                       { props.title }
                     </h2>
-                    <div className='text-flex-to-row'>
-                        <p><span>Developer</span>James Murphy</p>
-                    </div>
-                    <div className='text-flex-to-row'>
-                        <p><span>Design</span>Frontend Mentor</p>
 
-                    </div>
-                    <div className='text-flex-to-row'>
-                        <p><span>Client</span>Personal Project</p>
-                    </div>
-                    <div className='text-flex-to-row'>
-                        <p><span>Year</span>2022</p>
-                    </div>
+                    <ul className="website-list-ul">
+                        {props.webBuilders.map((project) => (
+                           <li className='text-flex-to-row' key={ props.projectid }>
+                           <p><span>{ project[0] }</span>{ project[1] }</p>
+                       </li>
+                        ))}
+                    </ul>
 
                     <div className='orange-line anim' data-direction={false} data-delay={true}></div>
                     
@@ -41,8 +38,8 @@ function ProjectDetail(props) {
                 </div>
                 <div className="project-detail-top-section-right">
 
-                    <h4 className='project-detail-subtitle'>Front end development example</h4>
-                    <p className='project-detail-content'>Loreum ispem blah blah. Loreum ispem blah blah. Loreum ispem blah blah. Award winning design services lyseum lorem epsim black you them for the salmon tree real magic boom splash. Award winning design services lyseum lorem epsim black you them for the salmon tree real magic boom splash. Award winning design services lyseum lorem epsim black you them for the salmon tree real magic boom splashAward winning design services lyseum lorem epsim black you them for the salmon</p>
+                    <h4 className='project-detail-subtitle'>{ props.exampleOf }</h4>
+                    <p className='project-detail-content'>{ props.webBuildDescription }</p>
         
                 </div>
 
@@ -63,10 +60,18 @@ function ProjectDetail(props) {
                 </Link>
             </div>
 
-                <div className='project-details-tools-container'>
-                    <div>
-                        <h2>Tools & Technology</h2>
-                        <p>This fully responsive website was built using Next.js as a front end web development framework in order to allow server side rendering for more effective SEO with the benefits of a single page application. </p>
+            {/* <ul className="project-list-ul">
+                        {props.webSiteList.map((project) => (
+                           <li className='text-flex-to-row' key={ props.projectid }>
+                           <p><span>{ project[0] }</span>{ project[1] }</p>
+                       </li>
+                        ))}
+                    </ul> */}
+
+                {/* <div className='project-details-tools-container'>
+                    <div className='tools-section-container'>
+                        <h2>{ props.title }</h2>
+                        <p>This fully responsive website was built using Next.js as a front end web development framework in order to allow server side rendering for better SEO with the benefits of a single page application. </p>
                         <div className='orange-line anim' data-direction={false} data-delay={true}></div>
                     </div>
                     <div>
@@ -79,7 +84,10 @@ function ProjectDetail(props) {
                             alt="dynamically generated story image"
                             />
                     </div>
-                </div>
+                </div> */}
+
+                <WebsiteList projects={ props.webSiteList }/> 
+
             </div>
         </Fragment>
     );
