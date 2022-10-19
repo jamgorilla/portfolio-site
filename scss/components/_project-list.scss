@@ -7,10 +7,14 @@
 
 .project-list-container {
     position: relative;
-}
+}  
 
 
 .photohero-container {
+    @media screen and (max-width: 1833px) {
+        right: 0rem;
+        top: 0rem;
+    }
     width: 30rem;
     position: absolute;
     right: 20rem;
@@ -36,6 +40,11 @@
 // }
 
 .photolist-container {
+    @media screen and (max-width: 1833px) {
+        display: none;
+        //visibility: hidden;
+    }
+
     width: 30rem;
     position: absolute;
     right: 0rem;

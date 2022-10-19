@@ -46,8 +46,6 @@ const numList = [0,1,2,3,4];
       <Head>
         <title>James Murphy Portfolio</title>
         <meta name="description" content="James Murphy Web Development Portfolio" />
-        <link rel="icon" href="/assets/JM-logo-v0.2.svg" />
-        {/* <link rel="stylesheet" href="https://use.typekit.net/xqn6tpy.css"></link> */}
       </Head>
       
       
@@ -111,12 +109,12 @@ export async function getStaticProps() {
     },{
       title: "Space Tourism",
       id: "2",
-      image1: '/../public/assets/space-tourism-homepage.png',
-      image2: '/../public/assets/space-tourism-planets.png'
+      image1: '/../public/assets/space-tourism-homepage-v2.png',
+      image2: '/../public/assets/space-tourism-planets-v2.png'
     },{
       title: "Countries List",
       id: "3",
-      image1: '/../public/assets/rest-countries-app-home.png',
+      image1: '/../public/assets/rest-countries-app-home-v2.png',
       image2: '/../public/assets/rest-countries-app.png'
     }
   ]

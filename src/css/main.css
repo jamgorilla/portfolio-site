@@ -452,6 +452,13 @@ body.open .menu-container {
   transition-property: all;
 }
 
+@media screen and (max-width: 1833px) {
+  .photohero-container {
+    right: 0rem;
+    top: 0rem;
+  }
+}
+
 .photohero-container:hover {
   cursor: pointer;
   -webkit-transform: translateY(200px);
@@ -469,6 +476,12 @@ body.open .menu-container {
           transition-duration: 0.4s;
   -webkit-transition-property: all;
   transition-property: all;
+}
+
+@media screen and (max-width: 1833px) {
+  .photolist-container {
+    display: none;
+  }
 }
 
 .photolist-container:hover {
@@ -728,6 +741,7 @@ main:before {
 
 .man-container {
   padding: 4rem 0rem 4rem 4rem;
+  margin-left: 15rem;
 }
 
 .projects-title {

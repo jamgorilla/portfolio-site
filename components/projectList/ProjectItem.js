@@ -32,8 +32,6 @@ useEffect(() => {
     
     entries.forEach(entry => {
         
-
-        
         if(entry.intersectionRatio > 0) {
           entry.target.style.animation = `${ entry.target.dataset.direction === 'false' ? 'anim1' : 'anim2' } 1s forwards ease-out ${ entry.target.dataset.delay ===  'true' ? '0.4s' : '' } `;
         } else {

@@ -17,7 +17,7 @@ function WebsiteList (props) {
                     key={project.id}
                     image1={project.image1}
                     image2={project.image2}
-                    
+                    explanation={project.explanation}
                 />
             ))}
         </ul>

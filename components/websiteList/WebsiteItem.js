@@ -62,7 +62,7 @@ console.log( "image one url ", props.image1 )
                 data-direction={false}>
 
                     <h2 className='anim' data-direction={false}>{ props.title }</h2>
-                    <p className='site-description anim' data-direction={false}>Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for young professionals</p>
+                    <p className='site-description anim' data-direction={false}>{ props.explanation }</p>
                     <div className='orange-line anim' data-direction={false} data-delay={true}></div>
                     <Link href={'/projects/' + props.id } ><p className="see-details anim" data-direction={false} >See Details</p></Link>
 

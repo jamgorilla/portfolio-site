@@ -31,8 +31,8 @@ function ProjectDetail(props) {
                     <div className='orange-line anim' data-direction={false} data-delay={true}></div>
                     
                     <div className='detail-page-link-container'>
-                        <Link href="https://photosnap-website.herokuapp.com/"><p  className='view-projects-button'>Live Site</p></Link>
-                        <Link href="https://github.com/jamgorilla/photosnap-website"><p  className='view-projects-button'>Git Repo</p></Link>
+                        <Link href={ props.webLiveUrl }><p  className='view-projects-button'>Live Site</p></Link>
+                        <Link href={ props.webGitRepo }><p  className='view-projects-button'>Git Repo</p></Link>
                     </div>
                 
                 </div>
@@ -46,7 +46,7 @@ function ProjectDetail(props) {
             </div>
 
             <div className='project-detail-section-image-container'>
-                <Link href={ '/' } className="project-detail-section-image">
+                <Link href={ props.webLiveUrl } className="project-detail-section-image">
                     <a>
                         <CustomForwardImage
                         className='detail-page-image'
