@@ -58,7 +58,7 @@ main:before {
     gap: 2rem;
     @media screen and (max-width: 1000px) {
         grid-row: 2 / 3;
-        margin-top: 0rem;
+        margin-top: -10rem;
     }
 }
 .man-container {

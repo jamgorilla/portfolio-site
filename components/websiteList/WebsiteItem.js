@@ -90,21 +90,17 @@ useEffect(() => {
                 {/* <div className='square-box-design'></div> */}
 
                 <div 
-                className='photolist-container anim'
+                className='web-photolist-container anim'
                 data-direction={true}
                 >  
-                    <Link href={'/projects/' + props.id }>
-                        <a>
-                            <CustomForwardImage
+                              <Image 
                                 src={ props.image2 }
                                 layout='responsive'
                                 height={'3055'}
                                 width={'4512'}
                                 alt="logo"
                                 className='photolist'
-                                />
-                        </a>
-                    </Link>
+                              />
                 </div>
             </div>
         </li>
