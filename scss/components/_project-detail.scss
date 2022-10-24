@@ -1,7 +1,7 @@
-.project-detail-page-body {
-    margin-right: 5rem;
-    margin-left: 5rem;
-}
+// .project-detail-page-body {
+//     // padding-right: var(--standard-side-padding);
+//     // padding-left: var(--standard-side-padding);
+// }
 
 .project-detail-top-section {
     margin-top: 16rem;
@@ -11,6 +11,8 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1.5rem;
+    padding-right: var(--standard-side-padding);
+    padding-left: var(--standard-side-padding);
 }
 
 .project-detail-content {
@@ -31,8 +33,13 @@
 }
 
 .project-detail-section-image-container {
-
+    margin-right: var(--standard-side-padding);
+    margin-left: var(--standard-side-padding);
     margin-bottom: 8rem;
+
+    border: 12px solid var(--clr-light-grey);
+    border-radius: 3px;
+
 }
 
 .orange-line {

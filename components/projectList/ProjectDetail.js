@@ -15,7 +15,7 @@ function ProjectDetail(props) {
             <div className="project-detail-page-body">
             <div className="project-detail-top-section">
                 <div className="project-detail-top-section-left">
-
+ 
                     <h2 className='project-detail-title'>
                       { props.title }
                     </h2>

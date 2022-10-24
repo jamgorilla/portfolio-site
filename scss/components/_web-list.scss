@@ -1,6 +1,8 @@
 .web-list-ul li {
     list-style: none;
-    padding: 100px 50px 100px 50px;
-    margin-bottom: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+    padding-right: var(--standard-side-padding);
+    padding-left: var(--standard-side-padding);
     background: linear-gradient(180deg, rgba(217, 217, 217, 0.3) 0%, rgba(217, 217, 217, 0) 100%);
 }

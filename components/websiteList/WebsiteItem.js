@@ -51,7 +51,6 @@ useEffect(() => {
 
 /////////
 
-console.log( "image one url ", props.image1 )
 
     return (
         <li>

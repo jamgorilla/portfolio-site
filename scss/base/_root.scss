@@ -35,7 +35,42 @@
     --icon-height: 5px; //thickness of sections 5px
     --scale-x: 1.4; //original 1.4 size
     --hamburger-vertical-gap: 14px; // 16px
+
+    /* margins */
+    --standard-side-padding: 30rem;
+    --animation-font-size: 400pt;
+
+
+    @media screen and (max-width: 2422px) {
+        --standard-side-padding: 20rem;
+        --animation-font-size: 300pt;
+    }
+    @media screen and (max-width: 1833px) {
+        --standard-side-padding: 15rem;
+        --animation-font-size: 220pt;
+
+    }
+    @media screen and (max-width: 1500px) {
+        --standard-side-padding: 10rem;
+        --animation-font-size: 160pt;
+
+    }
+    @media screen and (max-width: 1200px) {
+        //column setup///
+        --animation-font-size: 100pt;
+
+
+    }
+    @media screen and (max-width: 1000px) {
+        --standard-side-padding: 5rem;
+        --animation-font-size: 0pt;
+    }
 }
+
+////  BREAKPOINTS /////
+//-0<--mobile--> 768px <--tablet--> 1833px <-- desktop -->
+
+$hero-section-letters-desktop-breakpoint: 2422px;
 
 $project-list-tablet-max-width: 1833px;
 

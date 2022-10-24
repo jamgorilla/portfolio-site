@@ -12,6 +12,7 @@ function ProjectList (props) {
             {props.projects.map((project) => (
                 <ProjectItem 
                     title={project.title}
+                    description={ project.description }
                     id={project.id}
                     key={project.id}
                     image1={project.image1}

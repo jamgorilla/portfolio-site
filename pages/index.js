@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import man from '../public/assets/jm-photo-v0.7.png' 
 import ProjectList from '../components/projectList/ProjectList'
-
+import HeroAnimation from '../components/heroAnimation/HeroAnimation'
 
 
 //import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
@@ -12,9 +12,8 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState, useRef } from 'react'
 
 
-function Home(props) {
 
-//const [axis, setAxis] = useState(0);
+function Home(props) {
 
 
 useEffect(() => {
@@ -57,6 +56,8 @@ const numList = [0,1,2,3,4];
    design and develop
   </span>
 </p> */}
+
+          <HeroAnimation />
 
           <div className="title-section">
           <h4>James Murphy</h4>
@@ -103,17 +104,26 @@ export async function getStaticProps() {
   const projectArray = [
     {
       title: "Photosnap",
+      description: "Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for young professionals",
       id: "1",
       image1: '/../public/assets/photosnap-hero-section.png',
       image2: '/../public/assets/photosnap-list-section.png'
     },{
-      title: "Space Tourism",
+      title: "African Development Choices",
+      description: "UK based social enterprise with a mission to empower local communities to make more informed choices in the management of public resources.",
       id: "2",
+      image1: '/../public/assets/ADC-homepage-v2.png',
+      image2: '/../public/assets/ADC-second-page-v2.png'
+    },{
+      title: "Space Tourism",
+      description: "",
+      id: "3",
       image1: '/../public/assets/space-tourism-homepage-v2.png',
       image2: '/../public/assets/space-tourism-planets-v2.png'
     },{
       title: "Countries List",
-      id: "3",
+      description: "",
+      id: "4",
       image1: '/../public/assets/rest-countries-app-home-v2.png',
       image2: '/../public/assets/rest-countries-app.png'
     }

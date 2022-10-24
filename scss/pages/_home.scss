@@ -3,8 +3,8 @@
 // }
 main {
     position: relative;
-    margin-right: 10rem;
-    margin-left: 10rem;
+    // margin-right: 20rem;
+    // margin-left: 20rem;
     z-index: 0;
 }
 main:before {
@@ -26,6 +26,14 @@ main:before {
 .hero-section-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
+    padding-left: var(--standard-side-padding);
+    padding-right: var(--standard-side-padding);
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr;
+    }
+
+    
 }
 
 
@@ -42,75 +50,39 @@ main:before {
 }
 
 
-// /////////
-// .outside {
-// 	text-transform: uppercase;
-// 	letter-spacing: .5em;
-// 	display: inline-block;
-// 	border: 4px double rgba(255,255,255,.25);
-// 	//border-width: 4px 0;
-// 	//padding: 1.5em 0em;
-// 	position: absolute;
-// 	top: 10%;
-// 	//left: 50%;
-// 	width: 40em;
-// 	margin: 1rem 0 0 -1rem;
-//     opacity: 0.4;
-  
-//   span {
-
-//   	font: 700 4em "Oswald", sans-serif;
-//   	letter-spacing: 0;
-//   	//padding: .25em 0 .325em;
-// 	  display: block;
-// 	  //margin: 0 auto;
-//   	text-shadow: 0 0 80px rgba(255,255,255,.5);
-//     filter: grayscale(1);
-
-// /* Clip Background Image */
-
-// 	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-// 	  -webkit-background-clip: text;
-// 	  background-clip: text;
-
-// /* Animate Background Image */
-
-// 	  -webkit-text-fill-color: transparent;
-// 	  -webkit-animation: aitf 80s linear infinite;
-
-// /* Activate hardware acceleration for smoother animations */
-
-// 	  -webkit-transform: translate3d(0,0,0);
-// 	  -webkit-backface-visibility: hidden;
-
-//   }
-// }
-
-// /* Animate Background Image */
-
-// @-webkit-keyframes aitf {
-// 	0% { background-position: 0% 50%; }
-// 	100% { background-position: 100% 50%; }
-// }
-
-// ///////////////////
-
-
 .title-section {
-    margin-top: 7rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    @media screen and (max-width: 1000px) {
+        grid-row: 2 / 3;
+        margin-top: 0rem;
+    }
 }
 .man-container {
     padding: 4rem 0rem 4rem 4rem;
-    margin-left: 15rem;
+    margin-left: 0rem;
+    @media screen and (max-width: 1200px) {
+        padding-left: 0rem;
+        position: absolute;
+        min-width: 426px;
+        right: 4rem;
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 1000px) {
+        grid-row: 1 / 2;
+        padding: 0rem 5% 0rem 10%;
+        position: static;
+    }
     
 }
 .projects-title {
     margin-bottom: 4rem;
+    margin-left: var(--standard-side-padding);
+    margin-right: var(--standard-side-padding);
 }
-
 
 

@@ -47,6 +47,11 @@ export async function getStaticPaths() {
             params: {
                 projectid: "3",
             }
+        },
+        {
+            params: {
+                projectid: "4",
+            }
         }
         ]
     }
@@ -78,8 +83,31 @@ export async function getStaticProps(context) {
                     image2: '/../public/assets/heroku-trello-github.png'
                 }]
           },{
-            title: "Space Tourism",
+            title: "African Development Choices",
             id: "2",
+            image1: '/../public/assets/ADC-homepage-v2.png',
+            image2: '/../public/assets/ADC-second-page-v2.png',
+            homepageContent: 'UK based social enterprise with a mission to empower local communities to make more informed choices in the management of public resources.',
+            webBuilders: [['Developers', 'James Murphy'], ["Design", "Laura Bizzey"], ["Client", "African Development Choices"], ["Year", "2020"]],
+            exampleOf: "Wordpress Full-Stack Development",
+            webBuildDescription: "The client is a UK based social enterprise established in 2018. They had an existing website but it had become outdated and unmanageable so they were looking to update the design as well as make the back end more accesssible for self management by the client. For this reason Wordpress was selected as the development stack of choice due to it's user friendly process of updating assets and it's owner managed admin system. I collaborated with an inhouse web designer Laura along with various other stakeholders on design and content. We launched the new website in August 2020.",
+            webLiveUrl: 'https://africandevelopmentchoices.org/',
+            webGitRepo: "N/A held with Client",
+            webSiteList: [
+                {title: "Development Tools", 
+                    explanation: "The front end of this site was developed in HTML, CSS and Javascript using a customised Wordpress theme. PHP is used as a server-side scripting language to transfer data between it's MySQL database. Adobe XD was used as the design template for the creation of the UI.",
+                    image1: '/../public/assets/ADC-homepage-v2.png',
+                    image2: '/../public/assets/ADC-develop-tools.png'
+                },
+                {title: "Hosting and Process", 
+                    explanation: "A2 Hosting was selected to for workflow management and project management used trello and for version control used Github using a regular process of continuous integration ",
+                    image1: '/../public/assets/ADC-homepage-v2.png',
+                    image2: '/../public/assets/ADC-deploy-tools.png'
+                }]
+
+          },{
+            title: "Space Tourism",
+            id: "3",
             image1: '/../public/assets/space-tourism-homepage-v2.png',
             image2: '/../public/assets/space-tourism-planets-v2.png',
             homepageContent: 'Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for professionals',
@@ -102,7 +130,7 @@ export async function getStaticProps(context) {
 
           },{
             title: "Countries List",
-            id: "3",
+            id: "4",
             image1: '/../public/assets/rest-countries-app-home-v2.png',
             image2: '/../public/assets/rest-countries-app.png',
             homepageContent: 'Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for professionals',
