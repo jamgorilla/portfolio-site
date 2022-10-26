@@ -125,7 +125,7 @@ export async function getStaticProps(context) {
                 {title: "Hosting and Process", 
                     explanation: "For hosting I used heroku for workflow management and project management used trello and for version control used Github using a regular process of continuous integration ",
                     image1: '/../public/assets/photosnap-hero-section.png',
-                    image2: '/../public/assets/photosnap-list-section.png'
+                    image2: '/../public/assets/heroku-trello-github.png'
                 }]
 
           },{
@@ -148,7 +148,7 @@ export async function getStaticProps(context) {
                 {title: "Hosting and Process", 
                     explanation: "For hosting I used heroku for workflow management and project management used trello and for version control used Github using a regular process of continuous integration ",
                     image1: '/../public/assets/photosnap-hero-section.png',
-                    image2: '/../public/assets/photosnap-list-section.png'
+                    image2: '/../public/assets/heroku-trello-github.png'
                 }]
           }
       ]

@@ -72,6 +72,7 @@ const numList = [0,1,2,3,4];
           
           <Link href="#projects-section"><p  className='view-projects-button'>View Projects</p></Link>
           
+          
 
 
           </div>

@@ -56,38 +56,16 @@ useEffect(() => {
         <li>
                 <div className="project-list-container">
 
-                <div className='text-n-line anim' 
+                <div className='web-text-n-line anim' 
                 ref={ firstprojectsection }
                 data-direction={false}>
 
                     <h2 className='anim' data-direction={false}>{ props.title }</h2>
-                    <p className='site-description anim' data-direction={false}>{ props.explanation }</p>
+                    <p className='web-site-description anim' data-direction={false}>{ props.explanation }</p>
                     <div className='orange-line anim' data-direction={false} data-delay={true}></div>
                     <Link href={'/projects/' + props.id } ><p className="see-details anim" data-direction={false} >See Details</p></Link>
 
                 </div>
-
-
-                {/* <div 
-                className='photohero-container anim' 
-                ref={ firstprojectsection }
-                data-direction={false}
-                >
-                    <Link href={'/projects/' + props.id }>
-                        <a>
-                            <CustomForwardImage
-                                src={ props.image1 }
-                                layout='responsive'
-                                height={'3001'}
-                                width={'4505'}
-                                alt="logo"
-                                className='photohero'
-                                />
-                        </a>
-                    </Link>
-                </div> */}
-
-                {/* <div className='square-box-design'></div> */}
 
                 <div 
                 className='web-photolist-container anim'

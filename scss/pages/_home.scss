@@ -81,8 +81,20 @@ main:before {
 }
 .projects-title {
     margin-bottom: 4rem;
-    margin-left: var(--standard-side-padding);
-    margin-right: var(--standard-side-padding);
+    padding-top: 3rem;
+    padding-left: var(--standard-side-padding);
+    padding-right: var(--standard-side-padding);
+    background: var(--clr-background-linear-gradient-grey);
+
+    @media screen and (max-width: 1500px) {
+        margin-top: 4rem;
+    }
+    @media screen and (max-width: 1200px) {
+        margin-top: 12rem;
+    }
+    @media screen and (max-width: 1000px) {
+        margin-top: 6rem;
+    }
 }
 
 

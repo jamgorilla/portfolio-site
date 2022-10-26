@@ -1,33 +1,95 @@
 footer {
     background: var(--clr-light-grey);
-    height: 18rem;
+    height: 100%;
     padding-left: var(--standard-side-padding);
     padding-right: var(--standard-side-padding);
     padding-top: 4rem;
-
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 0.2fr 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    .footer-first-section {
+
+        & .footer-JM-logo-container {
+            min-width: 40px; //460
+            grid-column: 1/2;
+        }
+    }
+    & .footer-name-and-role {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap:1.5rem;
+        margin-left: 1rem;
+
+    }
+    & .social-media-icons-container {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        gap: 3rem;
+
+        & .icon-container {
+            width: 2rem;
+            &:not(:hover) {
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg) brightness(103%) contrast(103%);
+    
+            }
+        }
+    }
 }
-.footer-first-section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
 
   .footer-second-section, .footer-third-section  {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; 
     gap: .5rem;
+    grid-row: 1/4;
+
     & h2:first-child {
         margin-bottom: 1rem;
+        grid-row: 1/2;
+
     }
-    & ul {
-        list-style: none;
-        & li {
-            margin-bottom: 1rem;;
+}
+.footer-second-section-ul, .footer-third-section-ul {
+    list-style: none;
+    grid-row: 2/4;
+    margin-top: -1.5rem;
+    @media screen and (max-width: 1928px) {
+        margin-top: 0rem;
+    }
+    & li {
+        margin-bottom: 0.5rem;
+        & span:hover {
+            color: var(--clr-main-orange);
         }
     }
+}
+.footer-second-section-ul {
+    grid-column: 3/4;
+
+}
+.footer-third-section-ul {
+    grid-column: 4/5;
+}
+  .footer-second-section {
+    grid-column: 3/4;
+  }
+  .footer-third-section {
+    grid-column: 4/5;
   }
 
+  .copyright-container {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    opacity: .7;
+
+  }
