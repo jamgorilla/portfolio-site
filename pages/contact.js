@@ -31,7 +31,7 @@ function Contact() {
             </div>
             <div className='message-container'>
                 <label htmlFor="message"><h4>Message</h4></label>
-                <input type="text" id="message" name="message" />
+                <textarea id="message" name="message" />
             </div>
         </form>
 

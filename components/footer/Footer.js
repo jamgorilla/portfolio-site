@@ -106,7 +106,7 @@ function Footer() {
                     <li><Link href="/"><p><span>Home</span></p></Link></li>
                     <li><Link href="/#projects-section"><p><span>Projects</span></p></Link></li>
                     <li><Link href="/"><p><span>About Me</span></p></Link></li>
-                    <li><Link href="/"><p><span>Contact</span></p></Link></li>
+                    <li><Link href="/contact"><p><span>Contact</span></p></Link></li>
                 </ul>
 
         <div className='footer-third-section'>
