@@ -1071,20 +1071,6 @@ main {
   z-index: 0;
 }
 
-main:before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 200vh;
-  opacity: 10%;
-}
-
 .hero-section-container {
   display: -ms-grid;
   display: grid;
@@ -1194,6 +1180,19 @@ main:before {
   height: 100%;
 }
 
+.success-message {
+  position: absolute;
+  bottom: 0rem;
+  right: var(--standard-side-padding);
+  background-color: #4BB543;
+  width: 30%;
+  color: white;
+  height: 3rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-family: var(--ff-primary);
+}
+
 .contact-form {
   display: -ms-grid;
   display: grid;
@@ -1235,5 +1234,25 @@ main:before {
   font-size: 20pt;
   font-family: var(--ff-primary);
   color: var(--clr-medium-grey);
+}
+
+.contact-form span {
+  color: red;
+  height: 3rem;
+}
+
+.contact-form-submit-button {
+  background-color: transparent;
+  border: 3px solid var(--clr-main-orange-2-yellower);
+  border-radius: 15px;
+  width: 10rem;
+}
+
+.contact-form-submit-button:hover {
+  background-color: var(--clr-main-orange-2-yellower);
+}
+
+.contact-form-submit-button:hover h4 {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

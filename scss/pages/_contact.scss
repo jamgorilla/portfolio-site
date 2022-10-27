@@ -8,6 +8,19 @@
 // .contact-page-title {
 // }
 
+.success-message {
+    position: absolute;
+    bottom: 0rem;
+    right: var(--standard-side-padding);
+    background-color: #4BB543; 
+    width: 30%;
+    color: white;
+    height: 3rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-family: var(--ff-primary);
+}
+
 .contact-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,8 +53,25 @@
             font-size: 20pt;
             font-family: var(--ff-primary);
             color: var(--clr-medium-grey);
+           // color: var(--clr-light-grey);
 
+        }
+    }
+    & span {
+        color: red;
+        height: 3rem;
+    }
+}
 
+.contact-form-submit-button {
+    background-color: transparent;
+    border: 3px solid var(--clr-main-orange-2-yellower);
+    border-radius: 15px;
+    width: 10rem;
+    &:hover {
+        background-color: var(--clr-main-orange-2-yellower);
+        & h4 {
+            color: white;
         }
     }
 }
