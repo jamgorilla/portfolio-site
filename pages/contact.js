@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react';
-
+//import ReCAPTCHA from "react-google-recaptcha";
 
 
 function Contact() {
@@ -38,11 +38,21 @@ function Contact() {
 
         if (values.yourname && values.service && values.emailAddress && values.budget && values.message) {
             setValid(true);
+            //this is where make API call
+            console.log(values)
+            fetch('/api/mail', {
+                method: 'post',
+                body: JSON.stringify( values )
+            })
         }
 
         setSubmitted(true);
 
     }
+
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
 
 
   return (
@@ -109,6 +119,11 @@ function Contact() {
                     { submitted && !values.message ? <span>Please enter a message describing the project</span> : null }
 
             </div>
+
+            {/* <button className="g-recaptcha" 
+                data-sitekey="reCAPTCHA_site_key" 
+                data-callback='onSubmit' 
+                data-action='submit'>Submit</button> */}
 
             <button className="contact-form-submit-button" type="submit"><h4>Submit</h4></button>
         </form>

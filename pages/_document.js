@@ -10,6 +10,8 @@ export default function Document() {
         
         <link rel="stylesheet" href="https://use.typekit.net/xqn6tpy.css" />
         <link rel="icon" href="/assets/JM-logo-v0.2.svg" type="image/svg" />
+        {/* <script src="https://www.google.com/recaptcha/api.js" async></script> */}
+
 
       </Head>
       <body>

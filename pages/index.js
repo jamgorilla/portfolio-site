@@ -117,13 +117,13 @@ export async function getStaticProps() {
       image2: '/../public/assets/ADC-second-page-v2.png'
     },{
       title: "Space Tourism",
-      description: "",
+      description: "Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for young professionals",
       id: "3",
       image1: '/../public/assets/space-tourism-homepage-v2.png',
       image2: '/../public/assets/space-tourism-planets-v2.png'
     },{
       title: "Countries List",
-      description: "",
+      description: "Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for young professionals",
       id: "4",
       image1: '/../public/assets/rest-countries-app-home-v2.png',
       image2: '/../public/assets/rest-countries-app.png'

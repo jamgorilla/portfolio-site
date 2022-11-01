@@ -63,7 +63,7 @@ useEffect(() => {
                     <h2 className='anim' data-direction={false}>{ props.title }</h2>
                     <p className='web-site-description anim' data-direction={false}>{ props.explanation }</p>
                     <div className='orange-line anim' data-direction={false} data-delay={true}></div>
-                    <Link href={'/projects/' + props.id } ><p className="see-details anim" data-direction={false} >See Details</p></Link>
+                    {/* <Link href={'/projects/' + props.id } ><p className="see-details anim" data-direction={false} >See Details</p></Link> */}
 
                 </div>
 

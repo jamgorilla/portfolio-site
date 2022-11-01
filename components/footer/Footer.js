@@ -6,6 +6,11 @@
 // import instagram from '../../starter-code/assets/shared/desktop/instagram.svg';
 //import Invite from '../invite/Invite.js'
 import logo from '../../public/assets/JM-logo-v0.5.svg'
+
+import FEMlogoOrange from '../../public/assets/frontend-mentor-logo-orange.png'
+import GHLogoOrange from '../../public/assets/github-logo-orange.png'
+
+
 import fiverrlogo from '../../public/assets/fiverr-logo-grey.png'
 import fiverrlogoOrange from '../../public/assets/fiverr-logo-orange.png'
 
@@ -58,14 +63,28 @@ function Footer() {
                     </Link>
                 </div>
                 <div className='icon-container'>
-                    <Link href="https://www.fiverr.com/jamesmurphytech?public_mode=true" className="icon-container">
+                    <Link href="https://www.frontendmentor.io/profile/jamgorilla" className="icon-container">
                         <a>
                             <CustomFooterForwardImage
-                            className='footer-ffiver-logo'
-                            src={ fiverrlogoOrange }  
+                            className='footer-frontendmentor-logo'
+                            src={ FEMlogoOrange }  
                             height={'30px'}
                             width={'30px'}
-                            alt="ffiver-logo"
+                            label="FrontEnd Mentor"
+                            alt="frontendMentor-logo"
+                            />
+                        </a>
+                    </Link>
+                </div>
+                <div className='icon-container'>
+                    <Link href="https://github.com/jamgorilla" className="icon-container">
+                        <a>
+                            <CustomFooterForwardImage
+                            className='footer-github-logo'
+                            src={ GHLogoOrange }  
+                            height={'30px'}
+                            width={'30px'}
+                            alt="github-logo"
                             />
                         </a>
                     </Link>
@@ -75,20 +94,7 @@ function Footer() {
                         <a>
                             <CustomFooterForwardImage
                             className='footer-ffiver-logo'
-                            src={ fiverrlogoOrange }  
-                            height={'30px'}
-                            width={'30px'}
-                            alt="ffiver-logo"
-                            />
-                        </a>
-                    </Link>
-                </div>
-                <div className='icon-container'>
-                    <Link href="https://www.fiverr.com/jamesmurphytech?public_mode=true" className="icon-container">
-                        <a>
-                            <CustomFooterForwardImage
-                            className='footer-ffiver-logo'
-                            src={ fiverrlogoOrange }  
+                            src={ FEMlogoOrange }  
                             height={'30px'}
                             width={'30px'}
                             alt="ffiver-logo"
