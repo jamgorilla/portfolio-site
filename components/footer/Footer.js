@@ -111,7 +111,7 @@ function Footer() {
                 <ul className='footer-second-section-ul'>
                     <li><Link href="/"><p><span>Home</span></p></Link></li>
                     <li><Link href="/#projects-section"><p><span>Projects</span></p></Link></li>
-                    <li><Link href="/"><p><span>About Me</span></p></Link></li>
+                    <li><Link href="/aboutme"><p><span>About Me</span></p></Link></li>
                     <li><Link href="/contact"><p><span>Contact</span></p></Link></li>
                 </ul>
 

@@ -65,9 +65,7 @@ const numList = [0,1,2,3,4];
           Website Design & Development
           </h1>
           <p className='scroll' >
-            We provide design templates to ensure your stories look terrific. Easily add 
-            photos, text, embed maps and media from other networks. Then share your story 
-            with everyone.
+          I am a Full Stack Software Engineer with a focus on Front-End Development and Design. I love to help new and growing businesses launch their products and attract new customers.
           </p>
           
           <Link href="#projects-section"><p  className='view-projects-button'>View Projects</p></Link>
@@ -105,7 +103,7 @@ export async function getStaticProps() {
   const projectArray = [
     {
       title: "Photosnap",
-      description: "Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for young professionals",
+      description: "Photosnap website is a photo sharing and stroytelling application aimed at anyone with a passion for photograph who has a story to go along with it. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
       id: "1",
       image1: '/../public/assets/photosnap-hero-section.png',
       image2: '/../public/assets/photosnap-list-section.png'
@@ -117,13 +115,13 @@ export async function getStaticProps() {
       image2: '/../public/assets/ADC-second-page-v2.png'
     },{
       title: "Space Tourism",
-      description: "Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for young professionals",
+      description: "The Space Tourism website is an informational and experiencial visit to space. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
       id: "3",
       image1: '/../public/assets/space-tourism-homepage-v2.png',
       image2: '/../public/assets/space-tourism-planets-v2.png'
     },{
       title: "Countries List",
-      description: "Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for young professionals",
+      description: "The Countries list website is an informational which presents topical information on various countries. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
       id: "4",
       image1: '/../public/assets/rest-countries-app-home-v2.png',
       image2: '/../public/assets/rest-countries-app.png'

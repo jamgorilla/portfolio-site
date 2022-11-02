@@ -102,7 +102,6 @@ html {
 body {
   background-color: var(--clr-pure-white);
   color: var(--clr-pure-black);
-  height: 100%;
 }
 
 h1, h2, h3 {
@@ -393,7 +392,7 @@ body {
 
 body:before {
   content: '';
-  position: absolute;
+  position: fixed;
   background-color: var(--clr-pure-black);
   opacity: 0.9;
   top: 0;
@@ -409,7 +408,7 @@ body:before {
 
 body.open:before {
   content: '';
-  position: absolute;
+  position: fixed;
   background-color: var(--clr-pure-black);
   opacity: 0.9;
   top: 0;
@@ -417,8 +416,8 @@ body.open:before {
   -webkit-transform: scale(1);
           transform: scale(1);
   border-radius: 0%;
-  height: 200vh;
-  width: 200vw;
+  height: 100%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -1129,7 +1128,7 @@ footer .social-media-icons-container .icon-container:not(:hover) {
   -webkit-filter: url(#threshold) blur(0.6px);
           filter: url(#threshold) blur(0.6px);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 2422px) {
@@ -1355,5 +1354,13 @@ main {
 
 .contact-form-submit-button:hover h4 {
   color: white;
+}
+
+.aboutme-page {
+  margin-left: var(--standard-side-padding);
+  margin-right: var(--standard-side-padding);
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

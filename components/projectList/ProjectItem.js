@@ -7,7 +7,6 @@ import CustomForwardImage from './CustomForwardImage.js';
 
 function ProjectItem (props) {
 
-    // const photoPaths = [photosnaphero, photosnaplist, spaceTourismHomepage, spaceTourismPlanets];
 
 //////////// intersection observer /////////////////////////
 ///////////project section animations///////////////////////
@@ -29,7 +28,6 @@ useEffect(() => {
   const observer = new IntersectionObserver((entries) => {
     //this is where the animations introduced to the section
 
-    
     entries.forEach(entry => {
         
         if(entry.intersectionRatio > 0) {
@@ -47,7 +45,6 @@ useEffect(() => {
 
 }, [firstprojectsection])
 
-/////////
 
     return (
         <li>
@@ -77,14 +74,12 @@ useEffect(() => {
                                 layout='responsive'
                                 height={'3001'}
                                 width={'4505'}
-                                alt="logo"
+                                alt="website-hero-section-image"
                                 className='photohero'
                                 />
                         </a>
                     </Link>
                 </div>
-
-                {/* <div className='square-box-design'></div> */}
 
                 <div 
                 className='photolist-container anim'
@@ -97,7 +92,7 @@ useEffect(() => {
                                 layout='responsive'
                                 height={'3055'}
                                 width={'4512'}
-                                alt="logo"
+                                alt="website-photolist-image"
                                 className='photolist'
                                 />
                         </a>

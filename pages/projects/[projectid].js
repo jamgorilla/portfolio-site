@@ -68,7 +68,7 @@ export async function getStaticProps(context) {
             homepageContent: 'Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for professionals',
             webBuilders: [['Developers', 'James Murphy'], ["Design", "Frontend Mentor"], ["Client", "Personal Project"], ["Year", "2022"]],
             exampleOf: "Front End Development Example",
-            webBuildDescription: "This multipage layout was a personal project build with Next.js. The design was taken from Frontend Mentor.  ",
+            webBuildDescription: "This multipage layout was a personal project build with Next.js. The design was taken from Frontend Mentor. This was a good opportunity to test front end skills like Grid, Flexbox and Sass.",
             webLiveUrl: 'https://photosnap-website.herokuapp.com/',
             webGitRepo: "https://github.com/jamgorilla/photosnap-website",
             webSiteList: [
@@ -113,7 +113,7 @@ export async function getStaticProps(context) {
             homepageContent: 'Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for professionals',
             webBuilders: [['Developers', 'James Murphy'], ["Design", "Frontend Mentor"], ["Client", "Personal Project"], ["Year", "2022"]],
             exampleOf: "Front End Development Example",
-            webBuildDescription: "This was a personal project to test etc with design taken from Frontend Mentor ",
+            webBuildDescription: "This multipage layout was a personal project build with Next.js. The design was taken from Frontend Mentor. This was a good opportunity to test front end skills like Grid, Flexbox and Sass.",
             webLiveUrl: 'https://space-tourism-node.herokuapp.com/views/index',
             webGitRepo: "https://github.com/jamgorilla/space-tourism-node-version",
             webSiteList: [
@@ -136,7 +136,7 @@ export async function getStaticProps(context) {
             homepageContent: 'Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for professionals',
             webBuilders: [['Developers', 'James Murphy'], ["Design", "Frontend Mentor"], ["Client", "Personal Project"], ["Year", "2022"]],
             exampleOf: "Front End Development Example",
-            webBuildDescription: "This was a personal project to test etc with design taken from Frontend Mentor ",
+            webBuildDescription: "This multipage layout was a personal project build with Next.js. The design includes a searchable input list which utilises the REST Countries api to produce a list of results based on Users search criteria. It also includes Dark and Light modes for late night viewing and to reduce energy consumption. The design was taken from Frontend Mentor.",
             webLiveUrl: 'https://rest-countries-application.herokuapp.com/',
             webGitRepo: "https://github.com/jamgorilla/rest-countries-api",
             webSiteList: [
