@@ -63,8 +63,8 @@ export async function getStaticProps(context) {
         {
             title: "Photosnap",
             id: "1",
-            image1: '/../public/assets/photosnap-hero-section.png',
-            image2: '/../public/assets/photosnap-list-section.png',
+            image1: '/../public/assets/photosnap-hero-section.jpg',
+            image2: '/../public/assets/photosnap-list-section.jpg',
             homepageContent: 'Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for professionals',
             webBuilders: [['Developers', 'James Murphy'], ["Design", "Frontend Mentor"], ["Client", "Personal Project"], ["Year", "2022"]],
             exampleOf: "Front End Development Example",
@@ -74,19 +74,19 @@ export async function getStaticProps(context) {
             webSiteList: [
                 {title: "Development Tools", 
                     explanation: "This site was built using web development framework Next.js to allow server side rendering and as the front end framework. Used Next.js for",
-                    image1: '/../public/assets/photosnap-hero-section.png',
+                    image1: '/../public/assets/photosnap-hero-section.jpg',
                     image2: '/../public/assets/next-sass-html-figma.png'
                 },
                 {title: "Hosting and Process", 
                     explanation: "For hosting I used heroku for workflow management and project management used trello and for version control used Github using a regular process of continuous integration.",
-                    image1: '/../public/assets/photosnap-hero-section.png',
+                    image1: '/../public/assets/photosnap-hero-section.jpg',
                     image2: '/../public/assets/heroku-trello-github.png'
                 }]
           },{
             title: "African Development Choices",
             id: "2",
-            image1: '/../public/assets/ADC-homepage-v2.png',
-            image2: '/../public/assets/ADC-second-page-v2.png',
+            image1: '/../public/assets/ADC-homepage-v3.jpg',
+            image2: '/../public/assets/ADC-second-page-v2.jpg',
             homepageContent: 'UK based social enterprise with a mission to empower local communities to make more informed choices in the management of public resources.',
             webBuilders: [['Developers', 'James Murphy'], ["Design", "Laura Bizzey"], ["Client", "African Development Choices"], ["Year", "2020"]],
             exampleOf: "Wordpress Full-Stack Development",
@@ -96,13 +96,13 @@ export async function getStaticProps(context) {
             webSiteList: [
                 {title: "Development Tools", 
                     explanation: "The front end of this site was developed in HTML, CSS and Javascript using a customised Wordpress theme. PHP is used as a server-side scripting language to transfer data between it's MySQL database. Adobe XD was used as the design template for the creation of the UI.",
-                    image1: '/../public/assets/ADC-homepage-v2.png',
-                    image2: '/../public/assets/ADC-develop-tools.png'
+                    image1: '/../public/assets/ADC-homepage-v3.jpg',
+                    image2: '/../public/assets/ADC-develop-tools.jpg'
                 },
                 {title: "Hosting and Process", 
                     explanation: "A2 Hosting was selected to for workflow management and project management used trello and for version control used Github using a regular process of continuous integration ",
-                    image1: '/../public/assets/ADC-homepage-v2.png',
-                    image2: '/../public/assets/ADC-deploy-tools.png'
+                    image1: '/../public/assets/ADC-homepage-v3.jpg',
+                    image2: '/../public/assets/ADC-deploy-tools.jpg'
                 }]
 
           },{

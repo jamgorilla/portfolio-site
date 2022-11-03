@@ -105,14 +105,14 @@ export async function getStaticProps() {
       title: "Photosnap",
       description: "Photosnap website is a photo sharing and stroytelling application aimed at anyone with a passion for photograph who has a story to go along with it. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
       id: "1",
-      image1: '/../public/assets/photosnap-hero-section.png',
-      image2: '/../public/assets/photosnap-list-section.png'
+      image1: '/../public/assets/photosnap-hero-section.jpg',
+      image2: '/../public/assets/photosnap-list-section.jpg'
     },{
       title: "African Development Choices",
       description: "UK based social enterprise with a mission to empower local communities to make more informed choices in the management of public resources.",
       id: "2",
-      image1: '/../public/assets/ADC-homepage-v2.png',
-      image2: '/../public/assets/ADC-second-page-v2.png'
+      image1: '/../public/assets/ADC-homepage-v3.jpg',
+      image2: '/../public/assets/ADC-second-page-v2.jpg'
     },{
       title: "Space Tourism",
       description: "The Space Tourism website is an informational and experiencial visit to space. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
