@@ -106,25 +106,25 @@ export async function getStaticProps() {
       description: "Photosnap website is a photo sharing and stroytelling application aimed at anyone with a passion for photograph who has a story to go along with it. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
       id: "1",
       image1: '/assets/photosnap-hero-section.jpg',
-      image2: '/../public/assets/photosnap-list-section.jpg'
+      image2: '/assets/photosnap-list-section.jpg'
     },{
       title: "African Development Choices",
       description: "UK based social enterprise with a mission to empower local communities to make more informed choices in the management of public resources.",
       id: "2",
-      image1: '/../public/assets/ADC-homepage-v3.jpg',
-      image2: '/../public/assets/ADC-second-page-v2.jpg'
+      image1: '/assets/ADC-homepage-v3.jpg',
+      image2: '/assets/ADC-second-page-v2.jpg'
     },{
       title: "Space Tourism",
       description: "The Space Tourism website is an informational and experiencial visit to space. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
       id: "3",
-      image1: '/../public/assets/space-tourism-homepage.jpg',
-      image2: '/../public/assets/space-tourism-planets.jpg'
+      image1: '/assets/space-tourism-homepage.jpg',
+      image2: '/assets/space-tourism-planets.jpg'
     },{
       title: "Countries List",
       description: "The Countries list website is an informational which presents topical information on various countries. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
       id: "4",
-      image1: '/../public/assets/rest-countries-app-home-v2.png',
-      image2: '/../public/assets/rest-countries-app.png'
+      image1: '/assets/rest-countries-app-home-v2.png',
+      image2: '/assets/rest-countries-app.png'
     }
   ]
 
