@@ -108,7 +108,7 @@ export async function getStaticProps(context) {
           },{
             title: "Space Tourism",
             id: "3",
-            image1: '/../../public/assets/space-tourism-homepage.jpg',
+            image1: '/public/assets/space-tourism-homepage.jpg',
             image2: '/../public/assets/space-tourism-planets.jpg',
             homepageContent: 'Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for professionals',
             webBuilders: [['Developers', 'James Murphy'], ["Design", "Frontend Mentor"], ["Client", "Personal Project"], ["Year", "2022"]],
