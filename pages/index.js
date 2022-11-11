@@ -105,7 +105,7 @@ export async function getStaticProps() {
       title: "Photosnap",
       description: "Photosnap website is a photo sharing and stroytelling application aimed at anyone with a passion for photograph who has a story to go along with it. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
       id: "1",
-      image1: '/public/assets/photosnap-hero-section.jpg',
+      image1: '/../public/static/img/space-tourism-planets.jpg',
       image2: '/../public/assets/photosnap-list-section.jpg'
     },{
       title: "African Development Choices",
