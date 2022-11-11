@@ -69,7 +69,7 @@ export async function getStaticProps(context) {
             webBuilders: [['Developers', 'James Murphy'], ["Design", "Frontend Mentor"], ["Client", "Personal Project"], ["Year", "2022"]],
             exampleOf: "Front End Development Example",
             webBuildDescription: "This multipage layout was a personal project build with Next.js. The design was taken from Frontend Mentor. This was a good opportunity to test front end skills like Grid, Flexbox and Sass.",
-            webLiveUrl: 'https://photosnap-website.herokuapp.com/',
+            webLiveUrl: 'https://photosnap-website-indol.vercel.app/',
             webGitRepo: "https://github.com/jamgorilla/photosnap-website",
             webSiteList: [
                 {title: "Development Tools", 
@@ -108,13 +108,13 @@ export async function getStaticProps(context) {
           },{
             title: "Space Tourism",
             id: "3",
-            image1: '/../public/assets/space-tourism-homepage-v2.png',
-            image2: '/../public/assets/space-tourism-planets-v2.png',
+            image1: '/../../public/assets/space-tourism-homepage.jpg',
+            image2: '/../public/assets/space-tourism-planets.jpg',
             homepageContent: 'Photo and story sharing application for young professionals. Photo and story sharing application for young professionals.Photo and story sharing application for professionals',
             webBuilders: [['Developers', 'James Murphy'], ["Design", "Frontend Mentor"], ["Client", "Personal Project"], ["Year", "2022"]],
             exampleOf: "Front End Development Example",
             webBuildDescription: "This multipage layout was a personal project build with Next.js. The design was taken from Frontend Mentor. This was a good opportunity to test front end skills like Grid, Flexbox and Sass.",
-            webLiveUrl: 'https://space-tourism-node.herokuapp.com/views/index',
+            webLiveUrl: 'https://space-tourism-node-version.vercel.app/views',
             webGitRepo: "https://github.com/jamgorilla/space-tourism-node-version",
             webSiteList: [
                 {title: "Development Tools", 
@@ -137,7 +137,7 @@ export async function getStaticProps(context) {
             webBuilders: [['Developers', 'James Murphy'], ["Design", "Frontend Mentor"], ["Client", "Personal Project"], ["Year", "2022"]],
             exampleOf: "Front End Development Example",
             webBuildDescription: "This multipage layout was a personal project build with Next.js. The design includes a searchable input list which utilises the REST Countries api to produce a list of results based on Users search criteria. It also includes Dark and Light modes for late night viewing and to reduce energy consumption. The design was taken from Frontend Mentor.",
-            webLiveUrl: 'https://rest-countries-application.herokuapp.com/',
+            webLiveUrl: 'https://rest-countries-api-three-bay.vercel.app/',
             webGitRepo: "https://github.com/jamgorilla/rest-countries-api",
             webSiteList: [
                 {title: "Development Tools", 

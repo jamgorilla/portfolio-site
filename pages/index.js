@@ -117,8 +117,8 @@ export async function getStaticProps() {
       title: "Space Tourism",
       description: "The Space Tourism website is an informational and experiencial visit to space. This was a personal project built in 2022 with designs taken from Frontend Mentor.",
       id: "3",
-      image1: '/../public/assets/space-tourism-homepage-v2.png',
-      image2: '/../public/assets/space-tourism-planets-v2.png'
+      image1: '/../public/assets/space-tourism-homepage.jpg',
+      image2: '/../public/assets/space-tourism-planets.jpg'
     },{
       title: "Countries List",
       description: "The Countries list website is an informational which presents topical information on various countries. This was a personal project built in 2022 with designs taken from Frontend Mentor.",

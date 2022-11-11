@@ -1,3 +1,7 @@
+# TO START APP ON LOCAL HOST 3000
+
+npm run dev
+
 # Adding Website Screenshots
 
 Go to homepage or secondary page.
